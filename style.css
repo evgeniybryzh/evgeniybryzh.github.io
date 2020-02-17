@@ -114,3 +114,13 @@
 p {
   font-size: large;
 }
+.main_ul:link,
+:visited {
+  color: black;
+}
+.main_ul:hover {
+  font-size: x-large;
+}
+a {
+  text-decoration: none;
+}
