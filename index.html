@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <meta http-equiv="X-UA-compatible" content="ie=edge">
     <title>Мой жизненный путь</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!--Фото и первый заголовок-->
-    <h1>Привет!<br>
+    <h1 class="h1">Привет!<br>
         Меня зовут Брыжко Евгений<br>
         И это моя <u>Биография!</u>
     </h1>
-    <img src="images/Me.jpg" width="250" height="250" alt="Брыжко Евгений"><br>
+    <span class="image__me">
+    <img class="image" src="images/Me.jpg" alt="Брыжко Евгений"><br>
+    </span>
     <!--Блок "Персональная информация"-->
-    <h2>Ссылки на ДЗ:</h2>
-    <span>
+    
+    <span class="dz"><h2 class="dz_color">Ссылки на ДЗ:</h2>
+    
        <ul>
-           <li>Lesson 1 Biography
+           <li>Lesson 1 Biography:
                <ul>
                    <li>
                        <a href="https://evgeniybryzh.github.io/Home Work/Lesson 01 HTML/Biography eng and ru/Biography eng/index.html">Biography engl</a>
@@ -29,7 +33,7 @@
                    </li>
                 </ul>
             </li>
-            <li>Lesson 2 HTML and Links
+            <li>Lesson 2 HTML and Links:
                 <ul>
                     <li>
                         <a href="https://evgeniybryzh.github.io/Home Work/Lesson 02 HTML TAGS/Task 1/index.html">Task 1</a>
@@ -39,7 +43,7 @@
                     </li>
                  </ul>
              </li>
-             <li>Lesson 4 CSS
+             <li>Lesson 4 CSS:
                 <ul>
                     <li>
                         <a href="https://evgeniybryzh.github.io/Home Work/Lesson 04 CSS/01_simple/index.html">Task 1 Simple</a>
@@ -52,12 +56,15 @@
            
        </ul>
     </span>
+    <span class="personal_info">
     <h2>Персональная информация:</h2>
-    <p>
+    <p class="pers_info">
         <b>Дата рождения: </b><u>16.04.1994г.</u><br>
         <b>Страна\Город: </b><u>Украина\Кременчуг</u><br>
     </p>
+    </span>
     <!--Блок "Подробная информация"-->
+    <span class="detail_info">
     <h2>Подробная информация:</h2>
     <p>
         Я, Брижко Евгений Эдуардович родился и живу в г.Кременчуг Полтавской области.<br>
@@ -65,7 +72,7 @@
         после окончания которой поступил в Национальный Юридический Университет имени Ярослава Мудрого.<br>
         Там я провел 6 лет и получил <s>жизненно необходимое</s> звание: <br><b>"Магистр Юридический наук"!</b><br>
         После окончания учебы, естественно не пойдя работать по диплому, работал в таких предприятиях как:<br>
-        <ul>
+        <ul class="li">
             <li><b>Эльдорадо (магазин бытовой техники)</b></li>
             <li><b>Кари (обувной магазин)</b></li>
             <li><b>Новая <s>Почка</s> Почта (Почтовый сервис №1 в Украине) и тд.</b></li>
@@ -75,15 +82,23 @@
                 alt="Битрут Академия"> </a><br>
         Теперь <b>работаю</b> и <b>надеюсь</b> на результат!
     </p>
+    </span>
     <!--Раздел "Мои контакты"-->
-    <h2>Контакты:</h2>
+    <span class="find_me">
+        <h2 class="find_me_h2">Для связи:</h2>
+        <span class="instfb">
     <a href="https://www.facebook.com/profile.php?id=100014265064039"></a><img src="images/fb.png" width="50"
         height="50" alt="Фейсбук">
 
     <a href="https://www.instagram.com/bryzhkozheka/?hl=ru"><img src="images/inst.png" width="50" height="50"
-            alt="Инстаграм"></a><br>
-
+            alt="Инстаграм"></a>
+            </span>
+</span>
+<span class="find_me2"><h2 class="find_me2_h2">Для связи:</h2>
+    <span class="instfb2">
     <a href="tel:380991163586"><img src="images/tel.png" width="40" height="40" alt="Мой номер телефона"></a>
 
     <a href="mailto:evgeniybryzh@gmail.com"><img src="images/gmail.png" width="140" height="50"
             alt="Електронная почта"></a>
+            </span>
+            </span>
