@@ -1,0 +1,45 @@
+.header {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #a52a2a;
+  text-align: center;
+  color: white;
+}
+.sunset {
+  width: 100%;
+}
+.article1 {
+  font-size: 18px;
+}
+.italic {
+  font-style: italic;
+}
+.italyblue {
+  font-style: italic;
+  color: blue;
+}
+.bold {
+  font-weight: bold;
+}
+.footer {
+  font-size: 20px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.car1,
+.car2,
+.car3,
+.car4,
+.car5 {
+  border-style: dashed;
+  border-width: 3px;
+  border-color: black;
+  display: inline-block;
+}
+
+.cars {
+  display: inline-flex;
+  list-style-type: none;
+  margin: auto;
+}
