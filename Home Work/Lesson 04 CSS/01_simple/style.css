@@ -41,5 +41,5 @@
 .cars {
   display: inline-flex;
   list-style-type: none;
-  margin: auto;
+  margin-left: 325px;
 }
