@@ -46,6 +46,7 @@
   color: red;
   font-size: large;
   font-weight: bold;
+  overflow-y: scroll;
 }
 .dz_color {
   color: black;
@@ -124,4 +125,10 @@ p {
 }
 a {
   text-decoration: none;
+}
+.hr {
+  display: block;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
 }
