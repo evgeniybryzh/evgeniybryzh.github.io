@@ -5,6 +5,7 @@
   margin: 0em;
   padding: 0em;
   box-sizing: border-box;
+  transition: all 0.2s ease-in;
 }
 body {
   background-color: #2b81ac;
