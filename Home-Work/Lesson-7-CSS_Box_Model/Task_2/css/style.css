@@ -27,7 +27,7 @@ main {
   margin: 0px 15px 0 15px;
   padding-top: 10px;
 }
-.ul {
+.list {
   position: relative;
   width: 700px;
   height: auto;
@@ -41,96 +41,105 @@ h2 {
   font-size: 1rem;
   font-weight: 400;
 }
-.ul__li__span {
+.list__item__text {
   color: #ffefcf;
 }
 i {
   font-size: 1.5rem;
 }
 
-.ul__li:nth-child(1),
-.ul__li:nth-child(9) {
+.list__item:nth-child(1),
+.list__item:nth-child(9) {
   display: inline-block;
   width: 50%;
   font-size: 1rem;
 }
-.ul__li:nth-child(2),
-.ul__li:nth-child(3),
-.ul__li:nth-child(4),
-.ul__li:nth-child(5),
-.ul__li:nth-child(6),
-.ul__li:nth-child(7),
-.ul__li:nth-child(8),
-.ul__li:nth-child(10) {
+.list__item:nth-child(2),
+.list__item:nth-child(3),
+.list__item:nth-child(4),
+.list__item:nth-child(5),
+.list__item:nth-child(6),
+.list__item:nth-child(7),
+.list__item:nth-child(8),
+.list__item:nth-child(10) {
   display: inline-block;
   width: 25%;
   font-size: 1rem;
 }
-.ul__li:nth-child(11) {
+.list__item:nth-child(11) {
   display: inline-block;
   width: 100%;
   font-size: 1rem;
 }
-.ul__li {
+.list__item {
   height: 95px;
 }
-.ul__li__h2 {
+.list__item__h2 {
   padding: 12px 0px;
 }
-.ul__li:nth-child(1) {
+.list__item:nth-child(1) {
   background-color: #3399cc;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
 }
-.ul__li:nth-child(2) {
+.list__item:nth-child(2) {
   background-color: #33cccc;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
 }
 
-.ul__li:nth-child(3) {
+.list__item:nth-child(3) {
   background-color: #996699;
   border-bottom: 4px solid white;
 }
-.ul__li:nth-child(4) {
+.list__item:nth-child(4) {
   background-color: #c24747;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
 }
-.ul__li:nth-child(5) {
+.list__item:nth-child(5) {
   background-color: #e2674a;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
 }
-.ul__li:nth-child(6) {
+.list__item:nth-child(6) {
   background-color: #ffcc66;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
 }
-.ul__li:nth-child(7) {
+.list__item:nth-child(7) {
   background-color: #99cc99;
   border-bottom: 4px solid white;
 }
-.ul__li:nth-child(8) {
+.list__item:nth-child(8) {
   background-color: #669999;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
 }
-.ul__li:nth-child(9) {
+.list__item:nth-child(9) {
   background-color: #cc6699;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
 }
-.ul__li:nth-child(10) {
+.list__item:nth-child(10) {
   background-color: #cc6699;
   border-bottom: 4px solid white;
 }
-.ul__li:nth-child(11) {
+.list__item:nth-child(11) {
   background-color: #666699;
 }
-.ul:hover .ul__li:not(:hover) {
+.list:hover .list__item:not(:hover) {
   opacity: 0.5;
 }
+/* можно еще перезаписать свойства и  сделать так:
+ul:hover li {
+  opacity:0.5;
+}
+ul:hover li:hover {
+  opacity:1;
+}
+
+*/
 .footer {
   background-color: #3399cc;
   margin: 0px 15px 15px 15px;
