@@ -14,3 +14,6 @@
 * Lesson 7
     * [Lesson 7.1](https://evgeniybryzh.github.io/Lesson-7-CSS_Box_Model/Task_1/index.html)
     * [Lesson 7.2](https://evgeniybryzh.github.io/Lesson-7-CSS_Box_Model/Task_2/index.html)
+ * Lesson 8
+    * [Lesson 8.1](https://evgeniybryzh.github.io/Lesson-8-FlexBox/Task_1/index.html)
+    * [Lesson 8.2](https://evgeniybryzh.github.io/Lesson-8-FlexBox/Task_2/index.html)
