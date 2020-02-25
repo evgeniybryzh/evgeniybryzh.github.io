@@ -1,6 +1,6 @@
 # Beetroot Front-end
 
-* [Lesson 1](https://evgeniybryzh.github.io/Lesson-01-HTML/Biography-eng-and-ru/Biography-rus/index.html)
+* [Lesson 1](https://evgeniybryzh.github.io/Lesson-01-HTML/Biography/Biography-rus/index.html)
 * Lesson 2
     * [Lesson 2.1](https://evgeniybryzh.github.io/Lesson-02-HTML-TAGS/Task-1/index.html)
     * [Lesson 2.2](https://evgeniybryzh.github.io/Lesson-02-HTML-TAGS/Task-2/index_links.html)
