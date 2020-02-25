@@ -47,6 +47,7 @@ span {
   color: #ffffff;
   letter-spacing: 0.75px;
   margin-left: 10px;
+  font-family: "Odibee Sans";
 }
 .container__item {
   width: 360px;
@@ -80,11 +81,13 @@ span {
 .container__maintext {
   margin-bottom: 50px;
   margin-left: 30px;
+  font-family: "Odibee Sans";
 }
 .container__maintext2 {
   margin-bottom: 50px;
   margin-left: 30px;
   margin-top: 47px;
+  font-family: "Odibee Sans";
 }
 .container__item:nth-child(3),
 .container__item:nth-child(4),
