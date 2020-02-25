@@ -21,7 +21,7 @@ body {
 .container__item1 {
   display: flex;
   background-image: linear-gradient(to top, black 0%, transparent 40%),
-    url(/images/bgimage.jpg);
+    url(./images/bgimage.jpg);
   height: 540px;
   flex-basis: 64.5%;
 
