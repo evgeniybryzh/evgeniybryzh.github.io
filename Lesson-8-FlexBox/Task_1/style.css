@@ -37,7 +37,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 1;
-
+  padding: 20px 0;
   color: #333333;
 }
 .container__item--text {
@@ -47,6 +47,7 @@
   font-weight: 300;
   line-height: 1;
   font-size: 0.7rem;
+  padding: 20px 0;
 }
 .container__item--price {
   color: #02995b;
@@ -54,6 +55,7 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
+  padding-bottom: 30px;
 }
 
 .container__item:hover {
