@@ -4,11 +4,13 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+.body {
+  display: flex;
+  justify-content: center;
+}
 .container {
   height: 60%;
   width: 48%;
-  margin: 100px auto;
 }
 .container__list {
   padding: 40px 30px 40px 30px;
@@ -30,13 +32,12 @@
 .cup__image {
   width: 60px;
   height: 60px;
-  margin: 20px auto;
 }
 .container__item--color {
   font-size: 36px;
   font-weight: 400;
   line-height: 1;
-  margin: 40px 0;
+
   color: #333333;
 }
 .container__item--text {
