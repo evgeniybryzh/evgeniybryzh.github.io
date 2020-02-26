@@ -32,7 +32,7 @@
   height: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: column;
+  justify-content: flex-start;
   align-items: flex-start;
   list-style-type: none;
   padding-top: 30px;
@@ -73,6 +73,7 @@
 .container__item {
   height: 540px;
   width: 31.5%;
+  min-width: 359px;
   display: flex;
   flex-direction: column;
   justify-content: start;
