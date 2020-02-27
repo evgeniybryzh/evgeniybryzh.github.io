@@ -131,7 +131,6 @@
 }
 .footer__button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень */
-
   background-color: var(--button__color);
   transform: scale(1.5);
   transition: 1s;
@@ -141,12 +140,7 @@
   transition: 0.5s;
   transition-timing-function: linear;
 }
-@-webkit-keyframes pulsate {
-  50% {
-    color: #fff;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
-  }
-}
+
 @keyframes pulsate {
   50% {
     color: #fff;
