@@ -14,9 +14,12 @@
 * Lesson 7
     * [Lesson 7.1](https://evgeniybryzh.github.io/Lesson-7-CSS_Box_Model/Task_1/index.html)
     * [Lesson 7.2](https://evgeniybryzh.github.io/Lesson-7-CSS_Box_Model/Task_2/index.html)
- * Lesson 8
+* Lesson 8
     * [Lesson 8.1](https://evgeniybryzh.github.io/Lesson-8-FlexBox/Task_1/index.html)
     * [Lesson 8.2](https://evgeniybryzh.github.io/Lesson-8-FlexBox/Task_2/index.html)
- * Lesson 9
+* Lesson 9
     * [Lesson 9.1](https://evgeniybryzh.github.io/Lesson-9-Fonts/Task_1/index.html)
-    * [Lesson 9.2](https://evgeniybryzh.github.io/Lesson-9-Fonts/Task_2/index.html)
+    * [Lesson 9.2](https://evgeniybryzh.github.io/Lesson-9-Fonts/Task_2/index.html) 
+* Lesson 10
+    * [Lesson 10.1](https://evgeniybryzh.github.io/Lesson-10-Position_and_transformation/Task_1/index.html)
+    * [Lesson 10.2](https://evgeniybryzh.github.io/Lesson-10-Position_and_transformation/Task_2/index.html)

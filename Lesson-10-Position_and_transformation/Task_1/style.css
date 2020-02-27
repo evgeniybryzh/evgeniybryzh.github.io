@@ -10,7 +10,7 @@
   --border-color: #262626;
   --button__color: #f72b3b;
 }
-body {
+.body {
   width: 1500px;
   height: 864px;
   background-color: var(--bgcolor);
@@ -24,7 +24,6 @@ body {
 .header__title {
   width: 190px;
   height: 86px;
-
   font-family: "Raleway";
   font-size: 6rem;
   font-weight: 700;
@@ -34,11 +33,15 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
+  color: rgb(245, 245, 245);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+  animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
 }
+
 .header__text {
   width: 563px;
   height: 66px;
-
   text-align: center;
   font-family: "Raleway";
   font-size: 17px;
@@ -52,7 +55,6 @@ body {
 }
 .main {
   height: 400px;
-  width: 100%;
 }
 .container {
   width: 100%;
@@ -131,8 +133,23 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень */
 
   background-color: var(--button__color);
+  transform: scale(1.5);
+  transition: 1s;
 }
 .container__list:hover {
-  transform: scale(1.5);
-  z-index: 100;
+  transform: rotate(1turn);
+  transition: 1s;
+  transition-timing-function: linear;
+}
+@-webkit-keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}
+@keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
 }
