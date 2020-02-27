@@ -89,5 +89,10 @@
   top: 0px;
 }
 .container__photo:hover {
-  top: -267px;
+  transform: translatey(-260px);
+}
+.icon__wrapper:hover .container__photo {
+  transform: translatey(-260px) rotate(360deg);
+
+  transition: 0.5s linear;
 }
