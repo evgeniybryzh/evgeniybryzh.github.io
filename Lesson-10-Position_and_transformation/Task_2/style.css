@@ -68,10 +68,10 @@
   height: 268px;
   text-align: center;
 }
-.list__icon {
+.container__icon {
   margin-top: 45%;
 }
-.names__title {
+.container__title {
   width: 120px;
 
   color: var(--big-text-color);
@@ -79,15 +79,15 @@
   font-weight: bold;
   margin-top: 10px;
 }
-.names__text {
+.container__text {
   font-size: 0.9rem;
   font-weight: 300;
   color: var(--little-text-color);
 }
-.list__photo {
+.container__photo {
   position: absolute;
   top: 0px;
 }
-.list__photo:hover {
+.container__photo:hover {
   top: -267px;
 }
