@@ -80,7 +80,7 @@
   background-image: linear-gradient(to top, black 0%, transparent 50%),
     url(images/img3.jpg);
 }
-.list__date {
+.container__date {
   display: block;
   border: 1px solid var(--border-color);
   height: 60px;
@@ -95,12 +95,12 @@
   font-weight: 700;
   text-align: center;
 }
-.list__title {
+.container__title {
   position: absolute;
   bottom: 60px;
   left: 20px;
 }
-.list__text {
+.container__text {
   position: absolute;
   bottom: 24px;
   left: 20px;
