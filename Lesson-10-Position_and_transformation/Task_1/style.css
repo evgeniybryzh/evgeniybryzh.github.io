@@ -108,7 +108,7 @@
 .footer {
   position: relative;
 }
-.footer__button {
+.button {
   position: absolute;
   border: 1px solid var(--text-color);
   display: inline-block;
@@ -129,7 +129,7 @@
   right: 0;
   bottom: 0;
 }
-.footer__button:hover {
+.button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень */
   background-color: var(--button__color);
   transform: scale(1.5);
