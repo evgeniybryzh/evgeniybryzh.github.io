@@ -38,7 +38,7 @@
   height: 4px;
   background-color: var(--border-line-color);
 }
-.line__wrapper {
+.line-wrapper {
   margin-bottom: 50px;
   padding-right: 30px;
 }
@@ -63,7 +63,7 @@
   margin-right: 50px;
   position: relative;
 }
-.icon__wrapper {
+.icon-wrapper {
   background-color: var(--image-bg-color);
   width: 269px;
   height: 268px;
@@ -92,7 +92,7 @@
 .container__photo:hover {
   transform: translatey(-260px);
 }
-.icon__wrapper:hover .container__photo {
+.icon-wrapper:hover .container__photo {
   transform: translatey(-260px) rotate(360deg);
 
   transition: 0.5s linear;

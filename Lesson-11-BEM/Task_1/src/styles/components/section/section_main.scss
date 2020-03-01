@@ -1,0 +1,47 @@
+.main__title {
+  color: $text-color;
+  font-family: "Raleway";
+  font-size: 3.75rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  padding-top: 80px;
+}
+
+.main__text {
+  color: $text-color;
+  font-family: "Raleway";
+  font-size: 1.063rem;
+  font-weight: 400;
+  width: 368px;
+  height: auto;
+  line-height: 27px;
+}
+.main__button {
+  border: 1px solid --var;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: $white;
+  background-color: $btn-color;
+  font-family: "Raleway";
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main__button:hover {
+  background-color: $red;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 830px;
+  padding-left: 165px;
+  padding-bottom: 290px;
+}
+.main__button-wrapper {
+  padding-top: 40px;
+}
