@@ -68,6 +68,7 @@
   width: 269px;
   height: 268px;
   text-align: center;
+  transition: 0.5s linear;
 }
 .container__icon {
   margin-top: 45%;
@@ -88,12 +89,11 @@
 .container__photo {
   position: absolute;
   top: 0px;
+  transition: 0.5s linear;
 }
 .container__photo:hover {
   transform: translatey(-260px);
 }
 .icon-wrapper:hover .container__photo {
   transform: translatey(-260px) rotate(360deg);
-
-  transition: 0.5s linear;
 }
