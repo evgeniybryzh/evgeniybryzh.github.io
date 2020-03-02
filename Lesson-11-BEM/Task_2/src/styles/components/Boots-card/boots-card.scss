@@ -1,0 +1,22 @@
+.body {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 800px;
+  background: url(/images/bg1.png), url(/images/bg2.png), url(/images/bg4.png),
+    url(/images/bg3.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 170%, 100%, 100%, 100%;
+  background-position: center, center, center, center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.container {
+  width: 686px;
+  height: 391px;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+  border-radius: 10px;
+  background-color: $bg-card-color;
+}

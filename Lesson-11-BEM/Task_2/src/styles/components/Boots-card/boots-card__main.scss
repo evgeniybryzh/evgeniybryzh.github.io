@@ -1,0 +1,86 @@
+.boots-card__main {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+.boots-card__boot-image {
+  width: 329px;
+  height: 159px;
+
+  margin-right: 70px;
+}
+.boots-card__title {
+  color: $text-color;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 200px;
+  height: 44px;
+}
+.boots-card__description {
+  display: block;
+  width: 182px;
+  height: 14px;
+  opacity: 0.54;
+  color: $text-color;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+  margin-bottom: 10px;
+}
+.boots-card__boots-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.boots-card__footer {
+  position: absolute;
+  left: 30%;
+  bottom: 5%;
+}
+
+.star-rating__input {
+  display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before {
+  content: "\f005";
+  color: yellow;
+}
+.star-rating {
+  direction: rtl;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.star-rating__ico {
+  color: $ico-color;
+  opacity: 0.59;
+}
+
+.boots-card__sizes,
+.boots-card__qty {
+  background-color: $bg-card-color;
+  width: 69px;
+  height: 32px;
+  border: 1px solid #ffffff;
+  opacity: 0.26;
+  color: $text-color;
+}
+.boots-card__button {
+  width: 184px;
+  height: 40px;
+  border: 1px solid $text-color;
+  background-color: $btn-bg-color;
+  opacity: 0.26;
+  color: $white;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}

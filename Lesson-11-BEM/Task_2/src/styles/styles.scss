@@ -1,5 +1,12 @@
-@import "./Boots-card/boots-card__footer.scss";
-@import "./Boots-card/boots-card__header.scss";
-@import "./Boots-card/boots-card__main.scss";
-
 @import "./core/root.scss";
+
+@import "./components/Boots-card/boots-card__footer.scss";
+@import "./components/Boots-card/boots-card__header.scss";
+@import "./components/Boots-card/boots-card__main.scss";
+@import "./components/Boots-card/boots-card.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

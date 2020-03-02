@@ -1,0 +1,44 @@
+$style: radio;
+
+.#{$style} {
+  position: relative;
+  cursor: pointer;
+  margin-right: 12px;
+  &--black .#{$style}__dot {
+    background-color: #1f273f;
+  }
+  &--white {
+    .#{$style}__input:checked + .#{$style}__dot {
+      border-color: red;
+    }
+    .#{$style}__dot {
+      background-color: white;
+    }
+  }
+  &--red .#{$style}__dot {
+    background-color: #e73233;
+  }
+  &--blue .#{$style}__dot {
+    background-color: #29e0e7;
+  }
+  &__input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    &:checked + .#{$style}__dot {
+      transform: scale(1.2);
+      border-color: white;
+    }
+  }
+  &__dot {
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+}
