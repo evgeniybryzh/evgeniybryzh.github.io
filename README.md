@@ -25,6 +25,6 @@
     * [Lesson 10.2](https://evgeniybryzh.github.io/Lesson-10-Position_and_transformation/Task_2/index.html)
 * Lesson 11
     * [Lesson 11.1](https://evgeniybryzh.github.io/Lesson-11-BEM/Task_1/build/index.html)
-<!--    * [Lesson 11.2](https://evgeniybryzh.github.io/Lesson-10-Position_and_transformation/Task_2/index.html)    -->
+    * [Lesson 11.2](https://evgeniybryzh.github.io/Lesson-11-BEM/Task_2/build/index.html)    
     
   
