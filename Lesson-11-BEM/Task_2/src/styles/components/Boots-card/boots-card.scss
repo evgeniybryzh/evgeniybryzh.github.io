@@ -3,8 +3,8 @@
   min-height: 100vh;
   width: 100%;
   min-width: 800px;
-  background: url(../images/bg1.png), url(../images/bg2.png),
-    url(../images/bg4.png), url(../images/bg3.png);
+  background: url(../build/images/bg1.png), url(./build/images/bg2.png),
+    url(./images/bg4.png), url(images/bg3.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 170%, 100%, 100%, 100%;
   background-position: center, center, center, center;
