@@ -30,4 +30,4 @@
     * [Lesson 12.1](https://evgeniybryzh.github.io/lesson-12-form/Task_1/build/index.html)
 <!--    * [Lesson 12.2](https://evgeniybryzh.github.io/Lesson-12-form/Task_2/build/index.html)    -->
  * Lesson 13
-    * [Lesson 13.1](https://evgeniybryzh.github.io/lesson-13-SVG/Task_1/build/index.html)
+    * [Lesson 13.1](https://evgeniybryzh.github.io/Lesson-13-SVG/Task_1/build/index.html)
