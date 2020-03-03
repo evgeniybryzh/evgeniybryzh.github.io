@@ -12,7 +12,7 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
-  height: 315px;
+  height: 370px;
   justify-content: space-between;
 }
 .form__input:focus {
@@ -23,4 +23,17 @@ input::-webkit-input-placeholder {
 }
 input {
   outline: none;
+}
+.form__button {
+  width: 50%;
+  height: 50px;
+  background-color: $form-color;
+  opacity: 0.5;
+  align-self: flex-end;
+}
+.form__button:hover {
+  opacity: 1;
+}
+.form__button:active {
+  background-color: red;
 }
