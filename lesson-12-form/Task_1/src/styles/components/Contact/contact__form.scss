@@ -4,6 +4,7 @@
   width: 500px;
   opacity: 0.5;
   color: $white;
+  border: none;
 }
 .form__messege {
   height: 150px;
@@ -19,4 +20,7 @@
 }
 input::-webkit-input-placeholder {
   color: $white;
+}
+input {
+  outline: none;
 }
