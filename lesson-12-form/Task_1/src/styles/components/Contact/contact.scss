@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  min-height: 100vh;
+  width: auto;
+  min-width: 1500px;
+  transition: 1s;
+}
+.container__wrapper {
+  height: 100vh;
+  width: auto;
+  background-image: url(../images/bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

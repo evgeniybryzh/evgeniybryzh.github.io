@@ -26,5 +26,7 @@
 * Lesson 11
     * [Lesson 11.1](https://evgeniybryzh.github.io/Lesson-11-BEM/Task_1/build/index.html)
     * [Lesson 11.2](https://evgeniybryzh.github.io/Lesson-11-BEM/Task_2/build/index.html)    
-    
+* Lesson 12
+    * [Lesson 12.1](https://evgeniybryzh.github.io/Lesson-12-form/Task_1/build/index.html)
+<!--    * [Lesson 12.2](https://evgeniybryzh.github.io/Lesson-12-form/Task_2/build/index.html)    -->
   

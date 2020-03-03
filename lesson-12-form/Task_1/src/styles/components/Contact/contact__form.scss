@@ -1,0 +1,22 @@
+.form__input {
+  background-color: $form-color;
+  height: 40px;
+  width: 500px;
+  opacity: 0.5;
+  color: $white;
+}
+.form__messege {
+  height: 150px;
+}
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 315px;
+  justify-content: space-between;
+}
+.form__input:focus {
+  opacity: 1;
+}
+input::-webkit-input-placeholder {
+  color: $white;
+}

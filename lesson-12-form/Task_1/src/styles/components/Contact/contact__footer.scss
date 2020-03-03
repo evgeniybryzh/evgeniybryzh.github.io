@@ -1,0 +1,29 @@
+.footer {
+  background-color: $footer-color;
+  height: auto;
+  min-height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__copyright {
+  color: $footer-text-color;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.footer__logo {
+  color: $footer-text-color;
+  font-family: "Pacifico";
+  font-size: 1.563rem;
+  font-weight: 400;
+}
+.footer__made-by {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: $footer-text-color;
+}
+.footer__red-wrapper {
+  color: $red;
+}
