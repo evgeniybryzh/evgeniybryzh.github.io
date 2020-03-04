@@ -1,0 +1,74 @@
+.contact {
+  min-width: 1920px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact__link {
+  border: 2px solid $text-color-dark;
+  display: inline-block;
+  padding: 20px 160px;
+  text-decoration: none;
+  color: $text-color-white;
+  background-color: $text-color-dark;
+  font-family: "Lato";
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.54px;
+  margin-bottom: 70px;
+}
+.contact__box {
+  width: 899px;
+  height: 393px;
+  border: 3px solid $text-color-dark;
+  text-align: center;
+}
+.contact__text {
+  display: block;
+  width: 660px;
+  height: 66px;
+  color: $text-color-dark;
+  font-family: "Lato";
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 26px;
+  padding-top: 10px;
+}
+.contact__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact__border-text {
+  width: 556px;
+  color: $text-color-dark;
+  font-family: "Lato";
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4.76px;
+}
+.contact__border-text {
+  color: $text-color-dark;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+  animation: pulsate 1.9s linear infinite;
+}
+.contact__rights {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.footer__text {
+  display: block;
+  width: 345px;
+  height: 14px;
+  color: $text-color-dark;
+  font-family: "Lato";
+  font-size: 0.875rem;
+  padding-left: 30px;
+}

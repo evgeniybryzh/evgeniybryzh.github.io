@@ -1,0 +1,16 @@
+@import "./core/vars";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+
+@import "./components/about.scss";
+@import "./components/contact.scss";
+@import "./components/header.scss";
+@import "./components/links.scss";
+@import "./components/services.scss";
+@import "./components/work.scss";
+
+@keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}

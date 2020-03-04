@@ -1,0 +1,64 @@
+.work {
+  min-width: 1920px;
+  min-height: 1420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work__box {
+  width: 902px;
+  height: 1182px;
+  display: flex;
+  border: 3px solid $text-color-dark;
+  text-align: center;
+}
+.work__border-text {
+  width: 500px;
+  color: $text-color-dark;
+  font-family: "Lato";
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  text-align: center;
+}
+.work__border-text {
+  color: $text-color-dark;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+  animation: pulsate 1.9s linear infinite;
+}
+.work__item {
+  width: 550px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.work__img {
+  fill: $text-color-dark;
+}
+.work__title {
+  color: $text-color-dark;
+  font-family: "Lato";
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.26px;
+  padding-bottom: 20px;
+}
+.work__description {
+  color: $text-color-dark;
+  font-family: "Lato";
+  font-size: 0.87rem;
+  font-weight: 300;
+  line-height: 25.89px;
+}
