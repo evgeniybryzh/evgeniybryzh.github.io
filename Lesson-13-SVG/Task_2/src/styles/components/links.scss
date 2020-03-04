@@ -29,29 +29,29 @@ a:active {
   height: 237px;
 }
 .links__item:nth-child(1) {
-  background-image: url(/images/icon1.png);
+  background-image: url(../images/icon1.png);
   border-right: 10px solid $text-color-white;
   border-bottom: 10px solid $text-color-white;
 }
 .links__item:nth-child(2) {
-  background-image: url(/images/icon2.png);
+  background-image: url(../images/icon2.png);
   border-right: 10px solid $text-color-white;
   border-bottom: 10px solid $text-color-white;
 }
 .links__item:nth-child(3) {
-  background-image: url(/images/icon3.png);
+  background-image: url(../images/icon3.png);
   border-bottom: 10px solid $text-color-white;
 }
 .links__item:nth-child(4) {
-  background-image: url(/images/icon4.png);
+  background-image: url(../images/icon4.png);
   border-right: 10px solid $text-color-white;
 }
 .links__item:nth-child(5) {
-  background-image: url(/images/icon5.png);
+  background-image: url(../images/icon5.png);
   border-right: 10px solid $text-color-white;
 }
 .links__item:nth-child(6) {
-  background-image: url(/images/icon6.png);
+  background-image: url(../images/icon6.png);
 }
 .links__wrapper {
   height: 100%;
