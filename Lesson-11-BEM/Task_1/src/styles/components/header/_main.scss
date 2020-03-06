@@ -1,4 +1,4 @@
-.main__title {
+.header__body-title {
   color: $text-color;
   font-family: "Raleway";
   font-size: 3.75rem;
@@ -7,7 +7,7 @@
   padding-top: 80px;
 }
 
-.main__text {
+.header__body-text {
   color: $text-color;
   font-family: "Raleway";
   font-size: 1.063rem;
@@ -16,7 +16,7 @@
   height: auto;
   line-height: 27px;
 }
-.main__button {
+.button {
   border: 1px solid --var;
   padding: 15px 25px;
   text-decoration: none;
@@ -31,10 +31,10 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.main__button:hover {
+.button:hover {
   background-color: $red;
 }
-.main {
+.header__body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,6 +42,6 @@
   padding-left: 165px;
   padding-bottom: 290px;
 }
-.main__button-wrapper {
+.header__button-wrapper {
   padding-top: 40px;
 }

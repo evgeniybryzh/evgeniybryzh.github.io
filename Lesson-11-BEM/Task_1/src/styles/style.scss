@@ -3,7 +3,8 @@
 @import "./core/common";
 @import "./core/vars";
 
-@import "./components/section/section.scss";
-@import "./components/section/section_header.scss";
-@import "./components/section/section_main.scss";
+@import "./components/header/section.scss";
+@import "./components/header/header.scss";
+@import "./components/header/main.scss";
 @import "./components/about/about.scss";
+@import "./components/header/navigation";
