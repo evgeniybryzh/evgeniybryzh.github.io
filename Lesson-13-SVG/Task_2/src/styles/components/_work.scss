@@ -1,5 +1,4 @@
 .work {
-  min-width: 1920px;
   min-height: 1420px;
   display: flex;
   justify-content: center;
@@ -9,8 +8,11 @@
   width: 902px;
   height: 1182px;
   display: flex;
+  flex-direction: column;
   border: 3px solid $text-color-dark;
+  border-top: none;
   text-align: center;
+  position: relative;
 }
 .work__border-text {
   width: 500px;
@@ -21,11 +23,31 @@
   text-transform: uppercase;
   letter-spacing: 8.95px;
   text-align: center;
-}
-.work__border-text {
   color: $text-color-dark;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
   animation: pulsate 1.9s linear infinite;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.work__border-text:before {
+  display: block;
+  content: "";
+  height: 3px;
+  width: calc(50% - 250px);
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.work__border-text:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: calc(50% - 250px);
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .work__item {
   width: 550px;

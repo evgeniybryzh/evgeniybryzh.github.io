@@ -1,5 +1,4 @@
 .contact {
-  min-width: 1920px;
   min-height: 600px;
   display: flex;
   flex-direction: column;
@@ -24,7 +23,9 @@
   width: 899px;
   height: 393px;
   border: 3px solid $text-color-dark;
+  border-top: none;
   text-align: center;
+  position: relative;
 }
 .contact__text {
   display: block;
@@ -52,6 +53,28 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4.76px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.contact__border-text:before {
+  display: block;
+  content: "";
+  height: 3px;
+  width: calc(50% - 200px);
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contact__border-text:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: calc(50% - 200px);
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .contact__border-text {
   color: $text-color-dark;
