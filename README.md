@@ -33,5 +33,5 @@
     * [Lesson 13.1](https://evgeniybryzh.github.io/Lesson-13-SVG/Task_1/build/index.html)
     * [Lesson 13.2](https://evgeniybryzh.github.io/Lesson-13-SVG/Task_2/build/index.html)
  * Lesson 14
-    * [Lesson 14.1](https://evgeniybryzh.github.io/Lesson-14-PrePros/Task_1/build/index.html)
+    * [Lesson 14.1](https://evgeniybryzh.github.io/Lesson-14-Prepros/Task_1/build/index.html)
    
