@@ -1,0 +1,18 @@
+@import "./core/header-about-vars";
+.header__head {
+  height: 155px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__name {
+  font-family: "Pacifico";
+  font-size: 3.125rem;
+  font-weight: 400;
+  padding-left: 160px;
+}
+.header__pages {
+  margin-right: 166px;
+}

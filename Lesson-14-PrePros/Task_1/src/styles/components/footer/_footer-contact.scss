@@ -1,0 +1,22 @@
+.form__wrapper {
+  margin-right: 200px;
+}
+.main__contacts {
+  flex-basis: 32%;
+}
+.main__contact-name {
+  color: $footer-text-color;
+  font-family: "Raleway - bold", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main__data {
+  font-family: "Raleway - Light";
+  font-weight: 300;
+  opacity: 0.7;
+  font-size: 1.062rem;
+}
+.main__divider {
+  height: 25px;
+}

@@ -1,0 +1,18 @@
+.button {
+  border: 1px solid $gallery-btn-color;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: $gallery-btn-text-color;
+
+  font-family: $gallery-ff-raleway;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background-color: $gallery-hover-bg-btn-color;
+}

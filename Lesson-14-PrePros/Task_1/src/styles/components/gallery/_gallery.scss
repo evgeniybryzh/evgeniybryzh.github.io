@@ -1,0 +1,53 @@
+.gallery {
+  min-height: 1536px;
+  background-color: $gallery-bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  &__images-box {
+    max-width: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image:nth-child(2) {
+    align-self: flex-start;
+  }
+
+  &__image {
+    padding: 15px;
+  }
+  &__image:hover {
+    transform: scale(1.2);
+  }
+  &__title {
+    width: 307px;
+    height: 87px;
+    color: $gallery-text-color;
+    font-family: $gallery-ff-raleway;
+    font-size: 5.625rem;
+    font-weight: 700;
+    line-height: 27px;
+    padding-top: 60px;
+  }
+  &__text {
+    width: 577px;
+    height: 70px;
+    color: $gallery-text-color;
+    font-family: $gallery-ff-raleway;
+    font-size: 1.062rem;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+  }
+  &__button-wrapper {
+    width: 200px;
+    height: 55px;
+    margin-bottom: 120px;
+  }
+  &__button {
+    background-color: $gallery-btn-color;
+  }
+}

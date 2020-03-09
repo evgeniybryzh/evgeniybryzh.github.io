@@ -1,0 +1,30 @@
+.form {
+  &__input {
+    width: 570px;
+    height: 55px;
+    border: 1px solid $gallery-text-color;
+    margin-right: 30px;
+    color: $gallery-text-color;
+    font-family: $gallery-ff-raleway;
+    font-size: 0.937rem;
+    font-weight: 300;
+    line-height: 27px;
+  }
+
+  &__button {
+    width: 170px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: $gallery-subscribe-btn-color;
+    color: $gallery-btn-text-color;
+    font-family: $gallery-ff-raleway;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 27px;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  &__button:hover {
+    background-color: $gallery-hover-bg-btn-color;
+  }
+}

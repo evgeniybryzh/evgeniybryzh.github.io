@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,400i,500,700,800,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import "./core/inheritance";
+@import "./core/common";
+@import "./core/header-about-vars";
+@import "./core/services-vars";
+@import "./core/gallery-subscribe-vars";
+@import "./core/blog-vars";
+@import "./core/footer-roots";
+
+@import "./components/header/section.scss";
+@import "./components/header/header.scss";
+@import "./components/header/main.scss";
+@import "./components/about/about.scss";
+@import "./components/header/navigation";
+@import "./components/services/services";
+@import "./components/gallery/button";
+@import "./components/gallery/gallery";
+@import "./components/subscribe-form/form";
+@import "./components/subscribe-form/subscribe";
+@import "./components/blog/blog";
+@import "./components/footer/footer";
+@import "./components/footer/footer-header";
+@import "./components/footer/footer-form";
+@import "./components/footer/footer-contact";
+@import "./components/footer/footer-common";
+
+@keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}
