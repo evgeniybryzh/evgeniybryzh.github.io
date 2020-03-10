@@ -10,7 +10,9 @@
     font-weight: 300;
     line-height: 27px;
   }
-
+  &__input--white {
+    background-color: $header-light;
+  }
   &__button {
     width: 170px;
     height: 55px;

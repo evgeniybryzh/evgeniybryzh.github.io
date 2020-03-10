@@ -1,4 +1,4 @@
-.form__input {
+.form__input--purple {
   background-color: $footer-form-color;
   height: 50px;
   width: 500px;
@@ -8,6 +8,8 @@
 }
 .form__messege {
   height: 250px;
+  display: flex;
+  padding-bottom: 195px;
 }
 .form__wrapper {
   display: flex;
@@ -18,7 +20,7 @@
 .form__input:focus {
   opacity: 1;
 }
-input::-webkit-input-placeholder {
+.form__input--purple::-webkit-input-placeholder {
   color: $footer-white;
 }
 input {
