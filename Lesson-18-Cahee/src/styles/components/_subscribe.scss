@@ -1,6 +1,6 @@
 .subscribe {
   min-height: 500px;
-  background-image: url(/images/subscribe-bg.jpg);
+  background-image: url(../images/subscribe-bg.jpg);
   background-position: 50% 160%;
   background-repeat: no-repeat;
   background-size: 200%;
@@ -14,7 +14,7 @@
   @media screen and (min-width: 500px) {
     & {
       min-height: 500px;
-      background-image: url(/images/subscribe-bg.jpg);
+      background-image: url(../images/subscribe-bg.jpg);
       background-position: 120% 15%;
       background-repeat: no-repeat;
       background-size: 80%;
@@ -29,7 +29,7 @@
   @media screen and (min-width: 639px) {
     & {
       min-height: 500px;
-      background-image: url(/images/subscribe-bg.jpg);
+      background-image: url(../images/subscribe-bg.jpg);
       background-position: 120% -5%;
       background-repeat: no-repeat;
       background-size: 80%;
@@ -44,7 +44,7 @@
   @media screen and (min-width: 850px) {
     & {
       min-height: 500px;
-      background-image: url(/images/subscribe-bg.jpg);
+      background-image: url(../images/subscribe-bg.jpg);
       background-position: 100% -15%;
       background-repeat: no-repeat;
       background-size: 80%;
@@ -59,7 +59,7 @@
   @media screen and (min-width: 950px) {
     & {
       min-height: 500px;
-      background-image: url(/images/subscribe-bg.jpg);
+      background-image: url(../images/subscribe-bg.jpg);
       background-position: top;
       background-repeat: no-repeat;
       background-size: 90%;
@@ -73,7 +73,7 @@
   @media screen and (min-width: $screen-desktop-large) {
     & {
       min-height: 500px;
-      background-image: url(/images/subscribe-bg.jpg);
+      background-image: url(../images/subscribe-bg.jpg);
       background-position: right;
       background-repeat: no-repeat;
       background-size: 100%;

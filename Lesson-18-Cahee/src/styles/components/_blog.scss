@@ -110,21 +110,21 @@
   }
   &__card:nth-child(1) {
     background-image: linear-gradient(to top, black 0%, transparent 50%),
-      url(/images/blog-img1.jpg);
+      url(../images/blog-img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   &__card:nth-child(2) {
     background-image: linear-gradient(to top, black 0%, transparent 50%),
-      url(/images/blog-img2.jpg);
+      url(../images/blog-img2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   &__card3 {
     background-image: linear-gradient(to top, black 0%, transparent 50%),
-      url(/images/blog-img3.jpg);
+      url(../images/blog-img3.jpg);
     background-size: cover;
     background-position: center;
   }
