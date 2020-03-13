@@ -1,0 +1,28 @@
+.pages {
+  width: 357px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+}
+@media screen and (min-width: $screen-desktop) {
+  .pages {
+    width: 557px;
+  }
+}
+.pages__names {
+  font-family: "Raleway";
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: solid 3px transparent;
+}
+@media screen and (min-width: $screen-desktop) {
+  .pages__names {
+    font-size: 1rem;
+  }
+}
+.pages__names:hover {
+  border-top: 3px solid $header-btn-color;
+}

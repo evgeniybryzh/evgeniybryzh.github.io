@@ -1,0 +1,83 @@
+.gallery {
+  background-color: $gallery-bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  &__title {
+    width: 307px;
+    height: 87px;
+    color: $gallery-text-color;
+    font-family: $base-font;
+    font-size: 4.625rem;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 83px;
+    padding-top: 120px;
+    text-align: center;
+  }
+  @media screen and (min-width: 682px) {
+    &__title {
+      width: 307px;
+      height: 87px;
+      color: $gallery-text-color;
+      font-family: $base-font;
+      font-size: 5.625rem;
+      font-weight: 700;
+      line-height: 27px;
+      margin-bottom: 83px;
+      padding-top: 120px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    width: 320px;
+    height: 140px;
+    color: $gallery-text-color;
+    font-family: $base-font;
+    font-size: 1.062rem;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+  @media screen and (min-width: 479px) {
+    &__text {
+      width: 477px;
+      height: 70px;
+      color: $gallery-text-color;
+      font-family: $base-font;
+      font-size: 1.062rem;
+      font-weight: 300;
+      line-height: 27px;
+      text-align: center;
+      margin-bottom: 46px;
+    }
+  }
+  @media screen and (min-width: 682px) {
+    &__text {
+      width: 577px;
+      height: 70px;
+      color: $gallery-text-color;
+      font-family: $base-font;
+      font-size: 1.062rem;
+      font-weight: 300;
+      line-height: 27px;
+      text-align: center;
+      margin-bottom: 46px;
+    }
+  }
+  &__button-wrapper {
+    width: 220px;
+    height: 55px;
+    text-align: center;
+    padding-top: 68px;
+    padding-bottom: 142px;
+  }
+  &__button {
+    background-color: $gallery-btn-color;
+    padding: 14.5px 45px;
+    color: $gallery-btn-text-color;
+  }
+}

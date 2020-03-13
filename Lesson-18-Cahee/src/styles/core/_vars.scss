@@ -1,0 +1,68 @@
+// Natural colors
+$white: white;
+$light: #b9b9b9;
+$grey: #9d9d9d;
+$dark: #262626;
+$red: red;
+$footer-color: #262626;
+$footer-white: #ffffff;
+$footer-black: black;
+$footer-red: red;
+// Bacground colors
+$about-bg-color: #00c4c4;
+$services-bg-color: #70bfff;
+$gallery-bg-color: #ffe92f;
+$blog-bgcolor: #b07cf7;
+$footer-form-color: #00c4c4;
+// Button colors
+$header-btn-color: #ff6033;
+$gallery-btn-color: #5585a2;
+$gallery-btn-text-color: white;
+$gallery-hover-bg-btn-color: red;
+$gallery-subscribe-btn-color: #96b92c;
+$blog-button__color: #f72b3b;
+// Text colors
+$text-main-color: #262626;
+$header-text-color: #262626;
+$services-text-color: #262626;
+$gallery-text-color: #262626;
+$blog-text-color: #ffffff;
+$blog-title-color: rgb(245, 245, 245);
+$footer-text-color: #262626;
+$footer-ltext-color: #b9b9b9;
+// Border colors
+$services-border-color: #9d9d9d;
+$blog-border-color: #262626;
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$logo-fs: calcRem(50px);
+
+$H900: calcRem(90px);
+$H800: calcRem(60px);
+$H700: calcRem(40px);
+$H600: calcRem(32px);
+$H500: calcRem(25px);
+$H400: calcRem(21px);
+$H300: calcRem(20px);
+$H200: calcRem(17px);
+$H100: calcRem(16px);
+$H50: calcRem(15px);
+$H10: calcRem(13px);
+
+$base-font: "Raleway";
+$logo-font: "Pacifico";
+
+$max-width: 1200px;
+
+$screen-iphone: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;
