@@ -1,55 +1,92 @@
-$style: burger;
-.#{$style} {
-  position: relative;
-  z-index: 11;
-  display: block;
-  &__input {
+@media screen and (max-width: $screen-tablet) {
+  .menu__toggle {
     opacity: 0;
-    position: absolute;
-    z-index: -1;
-    visibility: hidden;
-    &:checked + .#{$style}__box {
-      .#{$style}__item:nth-child(1) {
-        width: 80%;
-      }
-      .#{$style}__item:nth-child(2) {
-        width: 60%;
-      }
-      .#{$style}__item:nth-child(3) {
-        width: 90%;
-      }
-    }
-    &:checked ~ .#{$style}__menu {
-      @media screen and (max-width: $screen-tablet) {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
   }
-  &__menu {
-    @media screen and (max-width: $screen-tablet) {
-      transition: all 0.2s ease;
-      visibility: hidden;
-      opacity: 0;
-      transform: translateY(-49px);
-      background-color: rgba($white, 0.9);
-    }
-  }
-  &__box {
-    width: 32px;
-    height: 16px;
-    @include flex(space-between, stretch, column);
+
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center; /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
     cursor: pointer;
-    @media screen and (min-width: $screen-tablet) {
-      display: none;
-    }
+    z-index: 1;
   }
-  &__item {
-    transition: width 0.2s ease;
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
     display: block;
-    height: 2px;
+    position: absolute;
     width: 100%;
-    background-color: $dark;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: $gallery-bg-color;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid $gallery-bg-color;
+
+    border-radius: 20%;
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  // открытие-закрытие меню
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    width: 100%;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    width: 75%;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    width: 75%;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+  .menu__item {
+    transition-duration: 0.25s;
   }
 }
