@@ -24,5 +24,10 @@
   }
 }
 .pages__names:hover {
-  border-top: 3px solid $header-btn-color;
+  border: 3px solid transparent;
+}
+@media screen and (min-width: $screen-tablet) {
+  .pages__names:hover {
+    border-top: 3px solid $header-btn-color;
+  }
 }
