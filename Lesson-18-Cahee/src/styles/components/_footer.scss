@@ -77,14 +77,39 @@
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
+  color: $red;
+  opacity: 0.9;
+}
+@media screen and (min-width: $screen-tablet) {
+  .main__contact-name {
+    color: $footer-text-color;
+    font-family: "Raleway - bold", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }
 .main__data {
-  text-align: center;
+  text-align: left;
   display: block;
   font-family: "Raleway - Light";
   font-weight: 300;
   opacity: 0.7;
   font-size: 1.062rem;
+  color: $white;
+  opacity: 0.6;
+  padding: 0 3px;
+}
+@media screen and (min-width: $screen-tablet) {
+  .main__data {
+    text-align: center;
+    display: block;
+    font-family: "Raleway - Light";
+    font-weight: 300;
+    opacity: 0.7;
+    font-size: 1.062rem;
+    color: $footer-text-color;
+  }
 }
 .main__divider {
   height: 25px;
@@ -157,9 +182,18 @@
 .footer__logo {
   color: $footer-ltext-color;
   font-family: "Pacifico";
-  font-size: 1.562rem;
+  font-size: 1.762rem;
   font-weight: 400;
-  padding: 0px 10px;
+  padding: 0px 30px 0px 10px;
+}
+@media screen and (min-width: $screen-iphone-plus) {
+  .footer__logo {
+    color: $footer-ltext-color;
+    font-family: "Pacifico";
+    font-size: 1.562rem;
+    font-weight: 400;
+    padding: 0px 10px;
+  }
 }
 .footer__made-by {
   font-family: "Raleway", sans-serif;

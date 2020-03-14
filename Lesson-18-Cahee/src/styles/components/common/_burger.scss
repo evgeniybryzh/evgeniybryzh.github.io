@@ -7,31 +7,15 @@
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
     position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     z-index: 1;
   }
   /* добавляем "гамбургер" */
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
-  }
-  .menu__btn > span::before {
-    content: "";
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: "";
-    top: 8px;
-  }
+
   /* контейнер меню */
   .menu__box {
     display: block;
@@ -42,20 +26,20 @@
     width: 300px;
     height: 400px;
     margin: 0;
-    padding: 40px 0;
+    padding: 10px 10px;
     list-style: none;
     text-align: center;
     background-color: $gallery-bg-color;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     border: 2px solid $gallery-bg-color;
-
     border-radius: 20%;
   }
+
   /* элементы меню */
   .menu__item {
     width: 70%;
     display: block;
-    padding: 10px 18px;
+    padding: 12px 18px;
     color: #333;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -75,10 +59,10 @@
     width: 100%;
   }
   #menu__toggle:checked ~ .menu__btn > span::before {
-    width: 75%;
+    width: 50%;
   }
   #menu__toggle:checked ~ .menu__btn > span::after {
-    width: 75%;
+    width: 50%;
   }
   #menu__toggle:checked ~ .menu__box {
     visibility: visible;
@@ -99,5 +83,52 @@
 @media screen and (min-width: $screen-tablet) {
   .menu__toggle {
     opacity: 0;
+  }
+}
+/* добавляем "гамбургер" */
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 60px;
+  height: 60px;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+.ham {
+  display: block;
+}
+@media screen and (min-width: $screen-tablet) {
+  .ham {
+    display: none;
   }
 }
