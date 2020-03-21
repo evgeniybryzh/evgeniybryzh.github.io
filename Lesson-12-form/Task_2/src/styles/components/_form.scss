@@ -1,0 +1,173 @@
+.form {
+  width: 400px;
+  height: 496px;
+  background-image: linear-gradient(
+      32deg,
+      rgba(48, 35, 174, 0.8) 6%,
+      rgba(200, 109, 215, 0.8) 96%
+    ),
+    url(/images/bg.png);
+  background-position-x: 22%;
+  opacity: 0.9;
+  z-index: 0;
+  padding-left: 70px;
+  padding-top: 50px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  &__link-wrapper {
+    display: flex;
+    margin-bottom: 53px;
+  }
+  &__sign-in-wrapper:first-of-type {
+    margin-right: 25px;
+  }
+
+  &__sign-in,
+  &__join-us {
+    display: block;
+    position: relative;
+    font-family: $main-font;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $text-color-dark;
+    cursor: pointer;
+  }
+  &__sign-in-radio,
+  &__join-us-radio {
+    display: none;
+  }
+  &__bottom-link {
+    text-decoration: underline;
+    font-family: $main-font;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $text-color-dark;
+  }
+  &__bottom-link:hover {
+    color: $light;
+  }
+  &__input-name {
+    display: block;
+    margin-bottom: 9px;
+  }
+  &__label--margined {
+    margin-bottom: 7px;
+  }
+  &__keep-label {
+    margin-bottom: 41px;
+  }
+  &__button {
+    margin-bottom: 32px;
+  }
+  &__bottom-link-wrapper {
+    width: 262px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sign-in-stripe {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 1px;
+    background-color: $red;
+    left: 0;
+    bottom: -5px;
+    z-index: 1111;
+    display: none;
+  }
+  &__sign-in-radio:checked ~ &__sign-in-stripe {
+    display: block;
+  }
+  &__join-us-stripe {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 1px;
+    background-color: $red;
+    left: 1px;
+    bottom: -5px;
+    z-index: 1111;
+    display: none;
+  }
+  &__join-us-radio:checked ~ &__join-us-stripe {
+    display: block;
+  }
+  &__join-us-radio:checked + &__join-text {
+    color: $text-color;
+  }
+  &__sign-in-radio:checked + &__sign-text {
+    color: $text-color;
+  }
+
+  &__input {
+    width: 261px;
+    height: 42px;
+    border: 2px solid $input-border-color;
+    outline: none;
+  }
+  &__input:valid {
+    border: 2px solid $valid-color;
+  }
+
+  &__error {
+    display: block;
+    font-family: $main-font;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $red;
+  }
+  &__input:not(:focus) + &__error {
+    opacity: 0;
+  }
+  &__input:valid + .form__error {
+    opacity: 0;
+  }
+  &__input:focus:invalid {
+    border-color: $red;
+  }
+  &__label {
+    font-family: $main-font;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $text-color;
+  }
+  &__keep-in-input {
+    display: none;
+  }
+  &__checkbox {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $btn-color;
+    text-align: center;
+  }
+
+  &__input-text {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    font-family: $main-font;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $text-color;
+  }
+  &__checkbox-icon {
+    fill: $light;
+  }
+  &__keep-in-input:checked ~ &__checkbox &__checkbox-icon {
+    display: none;
+  }
+  &__keep-label {
+    cursor: pointer;
+  }
+}
