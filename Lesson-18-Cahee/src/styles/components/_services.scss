@@ -203,8 +203,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
-  transition: 0.3s;
+  animation: rotate 2s ease-out 1s infinite alternate;
 }
+
 @media screen and (min-width: $screen-iphone-plus) {
   .services__image-block {
     width: 70%;
@@ -234,7 +235,4 @@
     background-size: contain;
     text-align: center;
   }
-}
-.services__image-block:hover {
-  transform: rotate(360deg);
 }
