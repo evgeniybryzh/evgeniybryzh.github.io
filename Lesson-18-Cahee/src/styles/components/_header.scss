@@ -170,15 +170,18 @@
   left: 50%;
   transform: translateX(-50%);
   display: none;
+  z-index: 1000;
 }
 @media screen and (min-width: $screen-iphone-plus) {
   .header__scroll {
     bottom: 15%;
+    z-index: 1000;
   }
 }
 @media screen and (min-width: $screen-desktop) {
   .header__scroll {
     bottom: 15%;
+    z-index: 1000;
   }
 }
 .header__body-title {
