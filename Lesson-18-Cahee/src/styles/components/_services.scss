@@ -203,7 +203,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
-  animation: rotate 2s ease-out 1s infinite alternate;
+  animation: none;
 }
 
 @media screen and (min-width: $screen-iphone-plus) {
@@ -219,6 +219,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;
+    animation: none;
   }
 }
 @media screen and (min-width: $screen-tablet) {
@@ -234,5 +235,22 @@
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;
+    animation: none;
+  }
+}
+@media screen and (min-width: $screen-desktop) {
+  .services__image-block {
+    width: 50%;
+    height: 70%;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: url(../images/img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    animation: pomidor 2s ease 1s infinite alternate;
   }
 }

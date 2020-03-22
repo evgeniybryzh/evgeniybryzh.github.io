@@ -32,25 +32,17 @@ a {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
   }
 }
-@keyframes rotate {
+@keyframes circle {
   from {
     transform: rotate(360deg);
   }
 }
-@keyframes rotate2 {
+@keyframes pomidor {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(45deg);
-  }
-  50% {
-    transform: rotate(90deg);
-  }
-  75% {
-    transform: rotate(135deg);
-  }
+
   100% {
-    transform: rotate(190deg);
+    transform: rotate(180deg);
   }
 }
