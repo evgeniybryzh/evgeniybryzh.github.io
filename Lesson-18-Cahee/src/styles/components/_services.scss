@@ -188,6 +188,8 @@
     font-weight: 700;
     top: 40%;
     z-index: 100;
+    transition: 2s;
+    animation: colors linear 4s infinite;
   }
 }
 
@@ -251,6 +253,5 @@
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;
-    animation: pomidor 2s ease 1s infinite alternate;
   }
 }

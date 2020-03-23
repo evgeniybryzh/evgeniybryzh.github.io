@@ -143,9 +143,7 @@
 .header__name:hover {
   transform: rotate(45deg);
 }
-.header__pages {
-  width: 300px;
-}
+
 @media screen and (min-width: $screen-iphone-plus) {
   .header__pages {
     padding-bottom: 10px;
@@ -154,14 +152,12 @@
 
 @media screen and (min-width: 650px) {
   .header__pages {
-    margin-right: 83px;
-    width: 300px;
+    margin-right: 183px;
   }
 }
 @media screen and (min-width: $screen-desktop) {
   .header__pages {
     margin-right: 166px;
-    width: 557px;
   }
 }
 .header__scroll {

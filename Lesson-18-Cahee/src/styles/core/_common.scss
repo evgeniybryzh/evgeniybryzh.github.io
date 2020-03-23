@@ -34,15 +34,41 @@ a {
 }
 @keyframes circle {
   from {
+    transform: rotate(180deg);
+  }
+  to {
     transform: rotate(360deg);
   }
 }
-@keyframes pomidor {
-  0% {
-    transform: rotate(0deg);
+@keyframes colors {
+  10% {
+    color: white;
   }
-
+  20% {
+    color: green;
+  }
+  30% {
+    color: royalblue;
+  }
+  40% {
+    color: yellow;
+  }
+  50% {
+    color: salmon;
+  }
+  60% {
+    color: purple;
+  }
+  70% {
+    color: orange;
+  }
+  80% {
+    color: blue;
+  }
+  90% {
+    color: tomato;
+  }
   100% {
-    transform: rotate(180deg);
+    color: springgreen;
   }
 }
