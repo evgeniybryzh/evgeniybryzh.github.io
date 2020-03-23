@@ -255,3 +255,17 @@
     text-align: center;
   }
 }
+.services__icons-block--first:hover .services__icon--first {
+  fill: red;
+}
+.services__icons-block--second:hover .services__icon--second {
+  fill: green;
+}
+
+.services__icons-block--third:hover .services__icon--third {
+  fill: purple;
+}
+
+.services__icons-block--fourth:hover .services__icon--fourth {
+  fill: orange;
+}
