@@ -17,6 +17,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-top: solid 3px transparent;
+  transition: 0.8s;
 }
 @media screen and (min-width: $screen-desktop) {
   .pages__names {
