@@ -61,8 +61,8 @@ input {
   background-color: $footer-form-color;
   opacity: 0.7;
   align-self: flex-start;
-  // visibility: hidden;
+  visibility: hidden;
 }
-// .form__input:valid + .form__button--purple {
-//   visibility: visible;
-// }
+.main__form:valid button {
+  visibility: visible;
+}

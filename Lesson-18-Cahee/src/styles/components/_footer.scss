@@ -80,7 +80,7 @@
   color: $red;
   opacity: 0.9;
 }
-@media screen and (min-width: $screen-tablet) {
+@media screen and (min-width: 850px) {
   .main__contact-name {
     color: $footer-text-color;
     font-family: "Raleway - bold", sans-serif;
@@ -100,7 +100,7 @@
   opacity: 0.6;
   padding: 0 3px;
 }
-@media screen and (min-width: $screen-tablet) {
+@media screen and (min-width: 850px) {
   .main__data {
     text-align: center;
     display: block;
