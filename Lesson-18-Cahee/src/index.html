@@ -250,7 +250,7 @@
         </div>
       </section>
 
-      <div class="contact-form" id="footer">
+      <section class="contact-form" id="footer">
         <div class="contact-form__wrapper">
           <div class="contact-form__head">
             <h2 class="contact-form__title">Contact</h2>
@@ -264,51 +264,70 @@
               <form action="#" class="main__form form" method="GET" id="form1">
                 <div class="form__wrapper">
                   <div class="form__controls">
-                    <input
-                      class="form__input form__input--purple"
-                      minlength="3"
-                      type="text"
-                      name="Username"
-                      id="Username"
-                      form="form1"
-                      tabindex="1"
-                      placeholder="Enter your name.."
-                    />
+                    <label for="Username">
+                      <input
+                        class="form__input form__input--purple"
+                        minlength="2"
+                        required
+                        type="text"
+                        name="Username"
+                        id="Username"
+                        form="form1"
+                        tabindex="1"
+                        placeholder="Enter your name.."
+                      />
+                      <span class="form__alert">Your name is too shirt</span>
+                    </label>
                   </div>
                   <div class="form__controls">
-                    <input
-                      class="form__input form__input--purple"
-                      minlength="3"
-                      type="text"
-                      name="email"
-                      id="email"
-                      form="form1"
-                      tabindex="2"
-                      placeholder="Your email.."
-                    />
+                    <label for="email"
+                      ><input
+                        required
+                        class="form__input form__input--purple"
+                        minlength="3"
+                        type="text"
+                        name="email"
+                        id="email"
+                        form="form1"
+                        tabindex="2"
+                        placeholder="Your email.."
+                      />
+
+                      <span class="form__alert">Invalid email</span>
+                    </label>
                   </div>
                   <div class="form__controls">
-                    <input
-                      class="form__input form__input--purple"
-                      type="text"
-                      name="phone-number"
-                      id="phone-number"
-                      form="form1"
-                      tabindex="3"
-                      placeholder="Your phone number.."
-                    />
+                    <label for="phone-number">
+                      <input
+                        required
+                        minlength="6"
+                        class="form__input form__input--purple"
+                        type="text"
+                        name="phone-number"
+                        id="phone-number"
+                        form="form1"
+                        tabindex="3"
+                        placeholder="Your phone number.."
+                      />
+                      <span class="form__alert">Invalid number</span>
+                    </label>
                   </div>
                   <div class="form__controls">
-                    <input
-                      class="form__input form__input--purple form__messege"
-                      type="text"
-                      name="messege"
-                      id="messege"
-                      form="form1"
+                    <textarea
                       tabindex="4"
+                      wrap="soft"
+                      name="massege"
                       placeholder="Your messge.."
-                    />
+                      class="form__input form__input--purple form__messege"
+                    >
+                    </textarea>
                   </div>
+                  <!-- <button
+                    class="form__button form__button--purple "
+                    form="form1"
+                  >
+                    Send
+                  </button> -->
                 </div>
               </form>
             </div>
@@ -333,7 +352,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <span class="footer__copyright">© 2015 Company. All right reserved.</span>
