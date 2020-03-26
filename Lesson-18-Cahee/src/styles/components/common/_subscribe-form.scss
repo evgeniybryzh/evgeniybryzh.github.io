@@ -65,6 +65,7 @@
     line-height: 27px;
     text-transform: uppercase;
     transition: 0.5s;
+    cursor: pointer;
   }
   &__button:hover {
     background-color: $gallery-hover-bg-btn-color;

@@ -124,6 +124,7 @@
   font-size: 1.9rem;
   font-weight: 400;
   transition: all 1s ease;
+  cursor: pointer;
 }
 @media screen and (min-width: $screen-iphone-plus) {
   .header__name {
