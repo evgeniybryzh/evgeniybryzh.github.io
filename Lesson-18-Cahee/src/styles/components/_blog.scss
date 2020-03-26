@@ -1,5 +1,6 @@
 .blog {
   background-color: $blog-bgcolor;
+  height: 100vh;
   width: 100%;
   padding-top: 100px;
   display: flex;
@@ -49,7 +50,7 @@
       font-size: 1.063rem;
       font-weight: 300;
       line-height: 25px;
-      margin-bottom: 47px;
+      margin-bottom: 77px;
       text-align: center;
     }
   }
