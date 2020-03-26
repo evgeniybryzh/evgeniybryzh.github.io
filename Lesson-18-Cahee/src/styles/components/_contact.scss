@@ -71,14 +71,31 @@
     text-align: start;
   }
 }
+.contact-form__contacts-wrapper {
+  border: 2px solid $about-bg-color;
+  border-radius: 15px;
+  height: 70px;
+  background-color: $about-bg-color;
+  opacity: 0.5;
+}
+@media screen and (min-width: 850px) {
+  .contact-form__contacts-wrapper {
+    border: none;
+    border-radius: 0px;
+    height: auto;
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+
 .contact-form__contact-name {
   color: $footer-text-color;
   font-family: "Raleway - bold", sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: $red;
-  opacity: 0.9;
+  color: $dark;
+  opacity: 1;
 }
 @media screen and (min-width: 850px) {
   .contact-form__contact-name {
@@ -87,6 +104,7 @@
     font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
+    opacity: 0.9;
   }
 }
 .contact-form__data {
@@ -96,9 +114,10 @@
   font-weight: 300;
   opacity: 0.7;
   font-size: 1.062rem;
-  color: $white;
-  opacity: 0.6;
+  color: $blog-button__color;
+  opacity: 1;
   padding: 0 3px;
+  text-align: center;
 }
 @media screen and (min-width: 850px) {
   .contact-form__data {
@@ -109,6 +128,7 @@
     opacity: 0.7;
     font-size: 1.062rem;
     color: $footer-text-color;
+    text-align: left;
   }
 }
 .contact-form__divider {

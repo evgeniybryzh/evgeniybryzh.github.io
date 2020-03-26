@@ -57,6 +57,9 @@ input {
 .form__input:focus:invalid {
   border-color: $red;
 }
+.form__input:focus:valid {
+  border-color: green;
+}
 .form__button--purple {
   background-color: $footer-form-color;
   opacity: 0.7;
