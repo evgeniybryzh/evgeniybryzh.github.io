@@ -74,7 +74,8 @@
 .contact-form__contacts-wrapper {
   border: 2px solid $about-bg-color;
   border-radius: 15px;
-  height: 70px;
+  height: 90px;
+  min-width: 90px;
   background-color: $about-bg-color;
   opacity: 0.5;
 }
@@ -118,6 +119,7 @@
   opacity: 1;
   padding: 0 3px;
   text-align: center;
+  word-wrap: break-word;
 }
 @media screen and (min-width: 850px) {
   .contact-form__data {
