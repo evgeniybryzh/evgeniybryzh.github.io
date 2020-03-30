@@ -10,25 +10,16 @@
   text-align: center;
   transition: 0.5s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
 
-.button:hover {
-  background-color: $red;
-}
-@media screen and (min-width: $screen-iphone-plus) {
-  .button {
+  @media screen and (min-width: $screen-iphone-plus) {
     padding: 5px 5px;
     font-size: 1.25rem;
   }
-}
-@media screen and (min-width: 650px) {
-  .button {
+  @media screen and (min-width: 650px) {
     padding: 10px 22px;
     font-size: 1.25rem;
   }
-}
-@media screen and (min-width: $screen-desktop) {
-  .button {
+  @media screen and (min-width: $screen-desktop) {
     padding: 15px 25px;
     font-size: 1.25rem;
   }

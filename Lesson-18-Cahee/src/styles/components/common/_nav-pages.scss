@@ -4,12 +4,11 @@
   flex-direction: row;
   list-style-type: none;
   justify-content: space-between;
-}
-@media screen and (min-width: $screen-desktop) {
-  .pages {
+  @media screen and (min-width: $screen-desktop) {
     width: 457px;
   }
 }
+
 .pages__names {
   font-family: "Raleway";
   font-size: 0.7rem;
@@ -18,17 +17,14 @@
   text-decoration: none;
   border-top: solid 3px transparent;
   transition: 0.8s;
-}
-@media screen and (min-width: $screen-desktop) {
-  .pages__names {
+  @media screen and (min-width: $screen-desktop) {
     font-size: 1rem;
   }
 }
+
 .pages__names:hover {
   border-top: solid 3px transparent;
-}
-@media screen and (min-width: $screen-tablet) {
-  .pages__names:hover {
+  @media screen and (min-width: $screen-tablet) {
     border-top: solid 3px $header-btn-color;
   }
 }

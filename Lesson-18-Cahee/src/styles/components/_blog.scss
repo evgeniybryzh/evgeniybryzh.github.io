@@ -9,17 +9,16 @@
   align-items: center;
 
   @media screen and (min-width: $screen-tablet) {
-    & {
-      background-color: $blog-bgcolor;
-      height: auto;
-      width: 100%;
-      padding-top: 100px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
+    background-color: $blog-bgcolor;
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
+
   &__main-title {
     width: 190px;
     height: 86px;
@@ -31,31 +30,31 @@
     animation: pulsate 1.2s linear infinite;
   }
   &__text {
-    width: 300px;
+    width: auto;
     height: 150px;
     color: $blog-text-color;
     font-family: $base-font;
-    font-size: 1.063rem;
+    font-size: 1.363rem;
     font-weight: 300;
     line-height: 25px;
     margin-bottom: 47px;
     text-align: center;
-  }
-  @media screen and (min-width: 448px) {
-    &__text {
-      width: 450px;
+    padding: 0 10px;
+
+    @media screen and (min-width: 448px) {
+      width: auto;
       height: 150px;
       color: $blog-text-color;
       font-family: $base-font;
-      font-size: 1.063rem;
+      font-size: 1.363rem;
       font-weight: 300;
       line-height: 25px;
       margin-bottom: 47px;
       text-align: center;
+      padding: 0 10px;
     }
-  }
-  @media screen and (min-width: 567px) {
-    &__text {
+
+    @media screen and (min-width: 567px) {
       width: 563px;
       height: 66px;
       color: $blog-text-color;
@@ -82,9 +81,8 @@
     justify-content: center;
     align-items: center;
     padding: 0 0;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__cards {
+
+    @media screen and (min-width: $screen-tablet) {
       width: 100%;
       flex-direction: row;
       display: flex;
@@ -103,9 +101,8 @@
     align-items: flex-start;
     transition: 1.2s;
     margin-bottom: 20px;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__card {
+
+    @media screen and (min-width: $screen-tablet) {
       width: 370px;
       height: 310px;
 
@@ -119,9 +116,8 @@
   }
   &__card:not(:last-child) {
     margin-right: 0px;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__card:not(:last-child) {
+
+    @media screen and (min-width: $screen-tablet) {
       margin-right: 30px;
     }
   }
@@ -139,7 +135,7 @@
     background-size: cover;
     background-position: center;
   }
-  &__card3 {
+  &__card--last {
     background-image: linear-gradient(to top, black 0%, transparent 50%),
       url(../images/blog-img3.jpg);
     background-size: cover;
@@ -200,9 +196,8 @@
     height: 55px;
     text-align: center;
     margin-bottom: 60px;
-  }
-  @media screen and (min-width: $screen-iphone-plus) {
-    &__button-wrapper {
+
+    @media screen and (min-width: $screen-iphone-plus) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -217,9 +212,8 @@
     background-color: $blog-button__color;
     padding: 14px 45px;
     color: $gallery-btn-text-color;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__button {
+
+    @media screen and (min-width: $screen-tablet) {
       background-color: $blog-button__color;
       padding: 14.5px 45px;
       color: $gallery-btn-text-color;
@@ -227,6 +221,10 @@
   }
 
   &__button:hover {
-    background-color: $header-btn-color;
+    background-color: none;
+
+    @media screen and (min-width: $screen-tablet) {
+      background-color: $header-btn-color;
+    }
   }
 }

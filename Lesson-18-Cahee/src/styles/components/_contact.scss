@@ -12,9 +12,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-}
-@media screen and (min-width: 850px) {
-  .contact-form__main-content {
+
+  @media screen and (min-width: 850px) {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -29,9 +28,8 @@
   height: 450px;
   justify-content: space-between;
   margin-bottom: 5px;
-}
-@media screen and (min-width: 510px) {
-  .form__wrapper {
+
+  @media screen and (min-width: 510px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,9 +37,8 @@
     justify-content: space-between;
     margin-bottom: 60px;
   }
-}
-@media screen and (min-width: 810px) {
-  .form__wrapper {
+
+  @media screen and (min-width: 810px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,9 +56,8 @@
   padding-top: 10px;
   align-items: flex-start;
   text-align: center;
-}
-@media screen and (min-width: 850px) {
-  .contact-form__contacts {
+
+  @media screen and (min-width: 850px) {
     flex-basis: 32%;
     padding-top: 0px;
     display: flex;
@@ -74,19 +70,20 @@
 .contact-form__contacts-wrapper {
   border: 2px solid $about-bg-color;
   border-radius: 15px;
-  height: 90px;
+  height: 100px;
   min-width: 90px;
   background-color: $about-bg-color;
   opacity: 0.5;
-}
-@media screen and (min-width: 850px) {
-  .contact-form__contacts-wrapper {
+  @media screen and (min-width: 850px) {
     border: none;
     border-radius: 0px;
     height: auto;
     background-color: transparent;
     opacity: 1;
   }
+}
+.contact-form__contacts-wrapper:not(:last-of-type) {
+  margin-right: 4px;
 }
 
 .contact-form__contact-name {
@@ -97,9 +94,9 @@
   text-transform: uppercase;
   color: $dark;
   opacity: 1;
-}
-@media screen and (min-width: 850px) {
-  .contact-form__contact-name {
+  padding-bottom: 5px;
+
+  @media screen and (min-width: 850px) {
     color: $footer-text-color;
     font-family: "Raleway - bold", sans-serif;
     font-size: 1.25rem;
@@ -120,9 +117,8 @@
   padding: 0 3px;
   text-align: center;
   word-wrap: break-word;
-}
-@media screen and (min-width: 850px) {
-  .contact-form__data {
+
+  @media screen and (min-width: 850px) {
     text-align: center;
     display: block;
     font-family: "Raleway - Light";
@@ -152,9 +148,8 @@
   font-weight: 700;
   text-align: center;
   padding-top: 20px;
-}
-@media screen and (min-width: 510px) {
-  .contact-form__title {
+
+  @media screen and (min-width: 510px) {
     width: 337px;
     height: 65px;
     color: $footer-text-color;
@@ -170,12 +165,23 @@
   height: 60px;
   color: $footer-text-color;
   font-family: "Raleway", sans-serif;
-  font-size: 1.062rem;
+  font-size: 1.362rem;
   font-weight: 300;
   text-align: center;
-}
-@media screen and (min-width: 510px) {
-  .contact-form__text {
+  padding: 0 10px;
+
+  @media screen and (min-width: 510px) {
+    display: block;
+    width: 350px;
+    height: 41px;
+    color: $footer-text-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.362rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 0px;
+  }
+  @media screen and (min-width: 850px) {
     display: block;
     width: 350px;
     height: 41px;
@@ -184,5 +190,6 @@
     font-size: 1.062rem;
     font-weight: 300;
     text-align: center;
+    padding: 0 0px;
   }
 }

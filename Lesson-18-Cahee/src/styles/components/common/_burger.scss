@@ -80,10 +80,9 @@
     transition-duration: 0.25s;
   }
 }
-@media screen and (min-width: $screen-tablet) {
-  .menu__toggle {
-    opacity: 0;
-  }
+
+.menu__toggle {
+  opacity: 0;
 }
 /* добавляем "гамбургер" */
 .ham {
@@ -111,24 +110,23 @@
   stroke-linecap: round;
 }
 
-.ham1 .top {
+.ham-first .line-first {
   stroke-dasharray: 40 139;
 }
-.ham1 .bottom {
+.ham-first .line-bottom {
   stroke-dasharray: 40 180;
 }
-.ham1.active .top {
+.ham-first.active .line-first {
   stroke-dashoffset: -98px;
 }
-.ham1.active .bottom {
+.ham-first.active .line-bottom {
   stroke-dashoffset: -138px;
 }
 
 .ham {
   display: block;
-}
-@media screen and (min-width: 766px) {
-  .ham {
+
+  @media screen and (min-width: 766px) {
     display: none;
   }
 }

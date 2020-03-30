@@ -30,8 +30,8 @@
         </div>
       </section>
       <section class="services" id="services">
-        <div class="services__icons">
-          <div class="services__icons-block services__icons-block--first">
+        <ul class="services__icons">
+          <li class="services__icons-block services__icons-block--first">
             <span class="services__icons-text">Online Shopping</span>
             <div class="services__icon-wrapper">
               <svg
@@ -50,8 +50,8 @@
                 </g>
               </svg>
             </div>
-          </div>
-          <div class="services__icons-block services__icons-block--second">
+          </li>
+          <li class="services__icons-block services__icons-block--second">
             <span class="services__icons-text">Quality Product</span>
             <div class="services__icon-wrapper">
               <svg
@@ -70,8 +70,8 @@
                 </g>
               </svg>
             </div>
-          </div>
-          <div class="services__icons-block services__icons-block--third">
+          </li>
+          <li class="services__icons-block services__icons-block--third">
             <span class="services__icons-text"
               >Domestic & International Delivery</span
             >
@@ -92,8 +92,8 @@
                 </g>
               </svg>
             </div>
-          </div>
-          <div class="services__icons-block services__icons-block--fourth">
+          </li>
+          <li class="services__icons-block services__icons-block--fourth">
             <span class="services__icons-text">Well Organized</span>
             <div class="services__icon-wrapper">
               <svg
@@ -112,10 +112,10 @@
                 </g>
               </svg>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div class="services__image-block">
-          <h1 class="services__title">Our Services</h1>
+          <h2 class="services__title">Our Services</h2>
         </div>
       </section>
       <section class="gallery" id="gallery">
@@ -179,11 +179,11 @@
             action="#"
             name="subscribe"
             id="subscribe"
-            class="subscribe__form form"
+            class="subscribe-form "
           >
             <input
               minlength="5"
-              class="form__input form__input--white"
+              class="subscribe-form__input subscribe-form__input--white"
               type="email"
               name="subscribe"
               form="subscribe"
@@ -192,7 +192,7 @@
             />
 
             <button
-              class="form__button"
+              class="subscribe-form__button button"
               form="subscribe"
               name="sunscribe-button"
             >
@@ -232,7 +232,7 @@
               <span class="blog__card-text"> By Auskteez - 3 hours ago</span>
             </div>
           </li>
-          <li class="blog__card blog__card3">
+          <li class="blog__card blog__card--last">
             <span class="blog__date">10 NOV</span>
             <div class="blog__text-wrapper">
               <h2 class="blog__card-title">
@@ -262,73 +262,66 @@
             >
           </div>
           <div class="contact-form__main-content main">
-            <div>
-              <form action="#" class="main__form form" method="GET" id="form1">
-                <div class="form__wrapper">
-                  <div class="form__controls">
-                    <label for="Username">
-                      <input
-                        class="form__input form__input--purple"
-                        minlength="2"
-                        required
-                        type="text"
-                        name="Username"
-                        id="Username"
-                        form="form1"
-                        tabindex="1"
-                        placeholder="Enter your name.."
-                      />
-                      <span class="form__alert">Your name is too shirt</span>
-                    </label>
-                  </div>
-                  <div class="form__controls">
-                    <label for="email"
-                      ><input
-                        required
-                        class="form__input form__input--purple"
-                        minlength="3"
-                        type="email"
-                        name="email"
-                        id="email"
-                        form="form1"
-                        tabindex="2"
-                        placeholder="Your email.."
-                      />
+            <form action="#" class="main-form " method="GET" id="form1">
+              <label for="Username">
+                <input
+                  class="main-form__input main-form__input--purple"
+                  minlength="2"
+                  required
+                  type="text"
+                  name="Username"
+                  id="Username"
+                  form="form1"
+                  tabindex="1"
+                  placeholder="Enter your name.."
+                />
+                <span class="main-form__alert">Your name is too shirt</span>
+              </label>
 
-                      <span class="form__alert">Invalid email</span>
-                    </label>
-                  </div>
-                  <div class="form__controls">
-                    <label for="phone-number">
-                      <input
-                        required
-                        minlength="6"
-                        class="form__input form__input--purple"
-                        type="text"
-                        name="phone-number"
-                        id="phone-number"
-                        form="form1"
-                        tabindex="3"
-                        placeholder="Your phone number.."
-                      />
-                      <span class="form__alert">Invalid number</span>
-                    </label>
-                  </div>
-                  <div class="form__controls">
-                    <textarea
-                      placeholder="Your massage"
-                      tabindex="4"
-                      wrap="soft"
-                      name="massage"
-                      class="form__input form__input--purple form__messege"
-                    ></textarea>
-                  </div>
-                  <button class="button form__button--purple " form="form1">
-                    Send
-                  </button>
-                </div>
-              </form>
-            </div>
+              <label for="email"
+                ><input
+                  required
+                  class="main-form__input main-form__input--purple"
+                  minlength="3"
+                  type="email"
+                  name="email"
+                  id="email"
+                  form="form1"
+                  tabindex="2"
+                  placeholder="Your email.."
+                />
+
+                <span class="main-form__alert">Invalid email</span>
+              </label>
+
+              <label for="phone-number">
+                <input
+                  required
+                  minlength="6"
+                  class="main-form__input main-form__input--purple"
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  form="form1"
+                  tabindex="3"
+                  placeholder="Your phone number.."
+                />
+                <span class="main-form__alert">Invalid number</span>
+              </label>
+
+              <textarea
+                placeholder="Your massage.."
+                tabindex="4"
+                wrap="soft"
+                name="massage"
+                class="main-form__input main-form__input--purple main-form__messege"
+              ></textarea>
+
+              <button class="button main-form__button " form="form1">
+                Send
+              </button>
+            </form>
+
             <div class="contact-form__contacts">
               <div class="contact-form__contacts-wrapper">
                 <h3 class="contact-form__contact-name">Address</h3>

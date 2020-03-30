@@ -10,9 +10,8 @@
     justify-content: flex-start;
     flex-direction: column;
     align-items: stretch;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__row {
+
+    @media screen and (min-width: $screen-tablet) {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -21,20 +20,17 @@
   }
   &__col {
     margin-bottom: 30px;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 0px;
+    }
   }
   &__col:nth-child(2) {
     margin-bottom: 0px;
   }
-  @media screen and (min-width: $screen-tablet) {
-    &__col {
-      margin-bottom: 0px;
-    }
-  }
+
   &__col:nth-child(odd) {
     margin-right: 0px;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__col:nth-child(odd) {
+    @media screen and (min-width: $screen-tablet) {
       margin-right: 30px;
     }
   }
@@ -43,9 +39,7 @@
     flex: 1 1 calc(100% / 3 * 2);
     padding-bottom: 71.5%;
     margin-bottom: 30px;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__big-img-wrapper {
+    @media screen and (min-width: $screen-tablet) {
       flex: 1 1 calc(100% / 3 * 2);
       padding-bottom: 46.5%;
     }
@@ -64,13 +58,12 @@
   &__mid-img-wrapper {
     flex: 1 1 50%;
     padding-bottom: 70%;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__mid-img-wrapper {
+    @media screen and (min-width: $screen-tablet) {
       flex: 1 1 50%;
       padding-bottom: 33.9%;
     }
   }
+
   &__mid-img-wrapper:last-of-type {
     margin-right: 1.2%;
   }
@@ -79,18 +72,15 @@
     flex: 1 1 50%;
     height: 100%;
     width: 100%;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__little-img {
+    @media screen and (min-width: $screen-tablet) {
       flex: 1 1 50%;
       height: 100%;
       width: 96.5%;
-    }
-    &__little-img {
       padding-bottom: 30px;
       transition: 0.2s;
     }
   }
+
   // Padding Hack
   &__img-wrapper {
     position: relative;
@@ -109,12 +99,13 @@
   }
   &__img-box {
     margin-bottom: 30px;
-  }
-  @media screen and (min-width: $screen-tablet) {
-    &__img-box {
+    width: 100%;
+    height: 100%;
+    @media screen and (min-width: $screen-tablet) {
       margin-bottom: 0px;
     }
   }
+
   &__images:hover,
   &__little-img:hover {
     border: 1px solid transparent;

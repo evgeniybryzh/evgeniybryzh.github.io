@@ -5,18 +5,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@media screen and (min-width: $screen-iphone-plus) {
-  .about {
+
+  @media screen and (min-width: $screen-iphone-plus) {
     width: 100%;
     background-color: $about-bg-color;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-}
-@media screen and (min-width: 1250px) {
-  .about {
+  @media screen and (min-width: 1250px) {
     width: 100%;
     background-color: $about-bg-color;
     display: flex;
@@ -28,24 +25,20 @@
   position: relative;
   height: 0;
   padding: 30%;
-}
-@media screen and (min-width: 321px) {
-  .about__image-wrapper {
+
+  @media screen and (min-width: 321px) {
     padding: 36%;
   }
-}
-@media screen and (min-width: 376px) {
-  .about__image-wrapper {
+
+  @media screen and (min-width: 376px) {
     padding: 40%;
   }
-}
-@media screen and (min-width: 625px) {
-  .about__image-wrapper {
+
+  @media screen and (min-width: 625px) {
     padding: 30%;
   }
-}
-@media screen and (min-width: 850px) {
-  .about__image-wrapper {
+
+  @media screen and (min-width: 850px) {
     padding: 25%;
   }
 }
@@ -60,9 +53,8 @@
   height: 100%;
   object-fit: contain;
   animation: none;
-}
-@media screen and (min-width: $screen-iphone-plus) {
-  .about__image {
+
+  @media screen and (min-width: $screen-iphone-plus) {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -73,9 +65,8 @@
     object-fit: contain;
     animation: none;
   }
-}
-@media screen and (min-width: $screen-tablet) {
-  .about__image {
+
+  @media screen and (min-width: $screen-tablet) {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -86,9 +77,8 @@
     object-fit: contain;
     animation: none;
   }
-}
-@media screen and (min-width: $screen-desktop) {
-  .about__image {
+
+  @media screen and (min-width: $screen-desktop) {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -104,30 +94,27 @@
 .about__title {
   color: $white;
   font-family: "Raleway";
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: 700;
   text-align: center;
-}
-@media screen and (min-width: $screen-iphone-plus) {
-  .about__title {
+
+  @media screen and (min-width: $screen-iphone-plus) {
     color: $white;
     font-family: "Raleway";
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
   }
-}
-@media screen and (min-width: 500px) {
-  .about__title {
+
+  @media screen and (min-width: 500px) {
     color: $white;
     font-family: "Raleway";
     font-size: 5.625rem;
     font-weight: 700;
     text-align: center;
   }
-}
-@media screen and (min-width: 1250px) {
-  .about__title {
+
+  @media screen and (min-width: 1250px) {
     color: $white;
     font-family: "Raleway";
     font-size: 5.625rem;
@@ -143,26 +130,26 @@
   height: auto;
   color: $white;
   font-family: "Raleway";
-  font-size: 1.063rem;
+  font-size: 1.263rem;
   font-weight: 300;
   line-height: 23px;
   margin: 0 auto;
-}
-@media screen and (min-width: 500px) {
-  .about__text {
+  padding: 0 10px;
+
+  @media screen and (min-width: 500px) {
     display: block;
     width: 499px;
-    height: 188px;
+    height: 240px;
     color: $white;
     font-family: "Raleway";
-    font-size: 1.063rem;
+    font-size: 1.263rem;
     font-weight: 300;
     line-height: 27px;
     text-align: center;
+    padding: 0 10px;
   }
-}
-@media screen and (min-width: 710px) {
-  .about__text {
+
+  @media screen and (min-width: 710px) {
     display: block;
     width: 700px;
     height: 188px;
@@ -172,11 +159,10 @@
     font-weight: 300;
     line-height: 27px;
     text-align: center;
+    padding: 0 10px;
   }
-}
 
-@media screen and (min-width: 1250px) {
-  .about__text {
+  @media screen and (min-width: 1250px) {
     display: block;
     width: 499px;
     height: 188px;
@@ -186,6 +172,7 @@
     font-weight: 300;
     line-height: 27px;
     text-align: left;
+    padding: 0 0px;
   }
 }
 
@@ -196,15 +183,13 @@
 .about__text-wrapper {
   padding-left: 0px;
   margin-bottom: 30px;
-}
-@media screen and (min-width: $screen-tablet) {
-  .about__text-wrapper {
+
+  @media screen and (min-width: $screen-tablet) {
     padding-left: 0px;
     margin-bottom: 30px;
   }
-}
-@media screen and (min-width: 1250px) {
-  .about__text-wrapper {
+
+  @media screen and (min-width: 1250px) {
     padding-left: 94px;
   }
 }
