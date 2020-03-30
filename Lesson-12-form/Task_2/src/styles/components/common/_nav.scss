@@ -22,13 +22,14 @@
   &__sign-in-stripe {
     content: "";
     position: absolute;
-    width: 55px;
+    width: 65px;
     height: 1px;
     background-color: $red;
     left: 0;
     bottom: -5px;
     z-index: 1111;
     display: none;
+    transition: all 1s ease;
   }
   &__sign-in-radio:checked ~ &__sign-in-stripe {
     display: block;
@@ -36,13 +37,14 @@
   &__join-us-stripe {
     content: "";
     position: absolute;
-    width: 58px;
+    width: 68px;
     height: 1px;
     background-color: $red;
     left: 1px;
     bottom: -5px;
     z-index: 1111;
     display: none;
+    transition: all 1s ease;
   }
   &__join-us-radio:checked ~ &__join-us-stripe {
     display: block;
@@ -61,5 +63,6 @@
     letter-spacing: 1px;
     color: $text-color;
     opacity: 0.6;
+    transition: all 1s ease;
   }
 }

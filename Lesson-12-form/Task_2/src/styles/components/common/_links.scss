@@ -11,8 +11,9 @@
     letter-spacing: 0.8px;
     border-bottom: 1px solid $text-color-dark;
     opacity: 0.3;
+    transition: all 0.2s ease;
   }
   &__bottom-link:hover {
-    color: $light;
+    opacity: 1;
   }
 }

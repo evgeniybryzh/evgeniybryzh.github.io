@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 35px;
+
   &__input-name {
     display: block;
     margin-bottom: 9px;
@@ -25,6 +26,8 @@
     border: 2px solid $input-border-color;
     outline: none;
     background-color: transparent;
+    color: $text-color;
+    transition: all 1s ease;
   }
   &__input:valid {
     border: 2px solid $valid-color;
@@ -79,6 +82,7 @@
   }
   &__checkbox-icon {
     fill: $light;
+    transition: all 1s ease;
   }
   &__keep-in-input:checked + &__checkbox-icon {
     display: none;
