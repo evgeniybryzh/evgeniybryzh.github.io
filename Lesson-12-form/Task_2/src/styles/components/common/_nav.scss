@@ -1,0 +1,65 @@
+.nav {
+  display: flex;
+  &__sign-in:first-of-type {
+    margin-right: 25px;
+  }
+
+  &__sign-in,
+  &__join-us {
+    display: block;
+    position: relative;
+    font-family: $main-font;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $text-color-dark;
+    cursor: pointer;
+  }
+  &__sign-in-radio,
+  &__join-us-radio {
+    display: none;
+  }
+  &__sign-in-stripe {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 1px;
+    background-color: $red;
+    left: 0;
+    bottom: -5px;
+    z-index: 1111;
+    display: none;
+  }
+  &__sign-in-radio:checked ~ &__sign-in-stripe {
+    display: block;
+  }
+  &__join-us-stripe {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 1px;
+    background-color: $red;
+    left: 1px;
+    bottom: -5px;
+    z-index: 1111;
+    display: none;
+  }
+  &__join-us-radio:checked ~ &__join-us-stripe {
+    display: block;
+  }
+  &__join-us-radio:checked + &__join-text {
+    opacity: 1;
+  }
+  &__sign-in-radio:checked + &__sign-text {
+    opacity: 1;
+  }
+  &__sign-text,
+  &__join-text {
+    font-family: $main-font;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $text-color;
+    opacity: 0.6;
+  }
+}

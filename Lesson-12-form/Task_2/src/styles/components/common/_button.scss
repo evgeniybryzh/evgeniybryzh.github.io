@@ -4,7 +4,6 @@
   text-decoration: none;
   padding: 5px 5px;
 
-  text-transform: uppercase;
   text-align: center;
   transition: 0.5s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -12,9 +11,9 @@
   height: 42px;
   background-color: #23ae92;
   font-family: $main-font;
-  font-size: 1.1rem;
-  line-height: 1.2;
-  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
   color: #fbf6e4;
 }
 

@@ -1,0 +1,89 @@
+.form-sign-in {
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  &__input-name {
+    display: block;
+    margin-bottom: 9px;
+    font-family: $main-font;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  &__keep-label {
+    margin-bottom: 41px;
+  }
+  &__label--margined {
+    margin-bottom: 7px;
+  }
+
+  &__input {
+    width: 261px;
+    height: 42px;
+    border: 2px solid $input-border-color;
+    outline: none;
+    background-color: transparent;
+  }
+  &__input:valid {
+    border: 2px solid $valid-color;
+  }
+
+  &__error {
+    display: block;
+    font-family: $main-font;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $red;
+  }
+  &__input:not(:focus) + &__error {
+    opacity: 0;
+  }
+  &__input:valid + .form-sign-in__error {
+    opacity: 0;
+  }
+  &__input:focus:invalid {
+    border-color: $red;
+  }
+  &__label {
+    font-family: $main-font;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $text-color;
+  }
+  &__keep-in-input {
+    display: none;
+  }
+  &__checkbox {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $btn-color;
+    text-align: center;
+  }
+
+  &__input-text {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    font-family: $main-font;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: $text-color;
+    letter-spacing: 1.5px;
+  }
+  &__checkbox-icon {
+    fill: $light;
+  }
+  &__keep-in-input:checked + &__checkbox-icon {
+    display: none;
+  }
+  &__keep-label {
+    cursor: pointer;
+  }
+}

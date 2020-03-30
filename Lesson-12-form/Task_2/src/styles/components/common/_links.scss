@@ -1,0 +1,18 @@
+.links {
+  width: 262px;
+  display: flex;
+  justify-content: space-between;
+  &__bottom-link {
+    font-family: $main-font;
+    font-size: 0.763rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $text-color;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid $text-color-dark;
+    opacity: 0.3;
+  }
+  &__bottom-link:hover {
+    color: $light;
+  }
+}
