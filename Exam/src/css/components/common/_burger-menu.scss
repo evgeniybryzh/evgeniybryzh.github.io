@@ -1,0 +1,97 @@
+.burger-menu {
+  width: 90%;
+  height: 80%;
+  background-color: $nav-bg-color;
+  @include flex-main(column, space-around);
+  left: 30%;
+  top: 10%;
+  @include media-q(800px) {
+    width: 40%;
+    height: 709px;
+    background-color: $nav-bg-color;
+    @include flex-main(column);
+    left: 30%;
+    top: 10%;
+  }
+  &__wrapper {
+    top: -100%;
+    left: -100%;
+    position: fixed;
+    @include flex-main;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3000;
+    transition: all 0.4s ease;
+  }
+  &__exit-icon {
+    cursor: pointer;
+    display: block;
+    width: 50px;
+    fill: $main-text-color;
+    color: $main-text-color;
+    text-align: center;
+    margin-right: 16px;
+    padding-top: 30px;
+    transition: all 0.7s ease;
+    @include media-q(400px) {
+      cursor: pointer;
+      display: block;
+      width: 60px;
+      fill: $main-text-color;
+      color: $main-text-color;
+      text-align: center;
+      margin-right: 16px;
+      padding-top: 0px;
+      transition: all 0.7s ease;
+    }
+  }
+  &__exit {
+    align-self: flex-end;
+  }
+  &__exit-icon:hover {
+    transform: rotate(180deg);
+  }
+
+  &__pages-name {
+    @include transition-basic;
+    opacity: 1;
+    &:hover {
+      border-bottom: 2px solid $main-text-color;
+    }
+
+    @include font($base-font, 30px, 300, $main-text-color);
+
+    @include media-q(600px) {
+      opacity: 1;
+      @include font($base-font, 50px, 300, $main-text-color);
+    }
+    @include media-q(800px) {
+      opacity: 1;
+      @include font($base-font, 50px, 300, $main-text-color);
+    }
+    @include media-q(1025px) {
+      opacity: 1;
+      @include font($base-font, 50px, 300, $main-text-color);
+    }
+  }
+  &__items {
+    height: 510px;
+    width: 420px;
+    @include flex-main(column, center, center);
+    border: none;
+    background-image: url(/);
+  }
+  &__pages {
+    margin-bottom: 55px;
+  }
+  &__links {
+    @include flex-main(row, space-around);
+    width: 310px;
+    height: 194px;
+  }
+  &__checkbox:checked ~ &__wrapper {
+    top: 0;
+    left: 0;
+  }
+}

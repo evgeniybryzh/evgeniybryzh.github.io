@@ -1,0 +1,98 @@
+.card {
+  @include flex-main(column);
+  width: 100%;
+  height: auto;
+  background-color: $icon-box-bg-color;
+  @include media-q($tablet) {
+    @include flex-main(column);
+    height: 60%;
+  }
+  @include media-q($desktop-small) {
+    width: 1110px;
+    height: 285px;
+    @include flex-main();
+  }
+  &__image {
+    padding: 0 10px;
+    width: 300px;
+    height: 285px;
+    background-image: url(../images/card-3.png);
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-position: 102% 75%;
+    @include media-q($phone) {
+      padding: 0 10px;
+      width: 345px;
+      height: 285px;
+      background-image: url(../images/card-3.png);
+      background-size: 170%;
+      background-repeat: no-repeat;
+      background-position: 102% 75%;
+    }
+    @include media-q($phone-wide) {
+      padding: 0 0px;
+      width: 445px;
+      height: 285px;
+      background-image: url(../images/card-3.png);
+      background-size: 170%;
+      background-repeat: no-repeat;
+      background-position: 102% 75%;
+    }
+    @include media-q($desktop-small) {
+      padding: 0 0px;
+      width: 455px;
+      height: 285px;
+      background-image: url(../images/card-3.png);
+      background-size: 170%;
+      background-repeat: no-repeat;
+      background-position: 102% 75%;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    width: auto;
+    padding: 0px 10px;
+    @include media-q($desktop-small) {
+      width: 665px;
+      padding: 0px 50px 0px 54px;
+    }
+  }
+  &__name {
+    @include font($secondary-font, 20px, 300, $content-box-text-color);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 20px;
+    @include media-q($desktop-small) {
+      @include font($secondary-font, 20px, 300, $content-box-text-color);
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      text-align: start;
+      padding-top: 47px;
+      letter-spacing: -1px;
+    }
+  }
+  &__text {
+    display: block;
+    @include font($secondary-font, 16px, 300, $content-box-text-color);
+    line-height: 26px;
+    margin-bottom: 20px;
+    word-spacing: 0.1px;
+    letter-spacing: -1px;
+    padding-top: 0;
+    @include media-q($desktop-small) {
+      display: block;
+      padding-top: 45px;
+      margin-bottom: 0px;
+      padding-left: 1px;
+    }
+  }
+  &__item {
+    display: block;
+    font-size: 2.5rem;
+    color: $btn-bg-color;
+    float: left;
+    padding-right: 6px;
+  }
+}

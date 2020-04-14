@@ -1,0 +1,53 @@
+// Natural colors
+$white: white;
+$light: #b9b9b9;
+$grey: #9d9d9d;
+$dark: #262626;
+$red: red;
+$footer-color: #262626;
+$footer-white: #ffffff;
+$footer-black: black;
+$footer-red: red;
+// Bacground colors
+$nav-bg-color: #5474fd;
+$icon-box-bg-color: #333333;
+$footer-line-bg-color: #232323;
+// Button colors
+$btn-bg-color: #5474fd;
+// Text colors
+$main-text-color: #ffffff;
+$secondary-text-color: #86807f;
+$content-box-text-color: #adadad;
+// Border colors
+$border-line-dots-color: #636363;
+//Fonts colors
+$input-text-color: #c2c2c2;
+
+//Fonts
+$base-font: "Aleo", serif;
+$secondary-font: "Josefin Sans", sans-serif;
+
+$logo-fs: calcRem(50px);
+
+$H900: calcRem(90px);
+$H800: calcRem(60px);
+$H700: calcRem(40px);
+$H600: calcRem(32px);
+$H500: calcRem(25px);
+$H400: calcRem(21px);
+$H300: calcRem(20px);
+$H200: calcRem(17px);
+$H100: calcRem(16px);
+$H50: calcRem(15px);
+$H10: calcRem(13px);
+
+$phone: 400px;
+$phone-wide: 480px;
+$phablet: 560px;
+$tablet-small: 640px;
+$tablet: 768px;
+$tablet-wide: 1024px;
+$container-width: 1110px;
+$desktop-small: 1110px;
+$desktop: 1248px;
+$desktop-wide: 1440px;

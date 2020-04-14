@@ -1,0 +1,67 @@
+.text-box {
+  width: 100%;
+  height: 683px;
+  padding: 0 10px;
+  @include flex-main(column, center, center);
+  @include media-q($phablet) {
+    padding: 0 10px;
+    width: 541px;
+  }
+  @include media-q($desktop-small) {
+    padding: 0 00px;
+    width: 541px;
+    height: 683px;
+    @include flex-main(column, flex-start, flex-start);
+  }
+  &__title {
+    @include font($base-font, 36px, 300, $main-text-color);
+    margin-bottom: 66px;
+    padding-top: 0;
+    @include media-q($desktop-small) {
+      @include font($base-font, 36px, 300, $main-text-color);
+      margin-bottom: 54px;
+      padding-top: 200px;
+    }
+  }
+  &__text {
+    display: block;
+    @include font($secondary-font, 16px, 300, $secondary-text-color);
+    line-height: 26px;
+    letter-spacing: 0.6px;
+    margin-bottom: 48px;
+    text-align: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+      @include media-q($desktop-small) {
+        margin-bottom: 0px;
+      }
+    }
+    &:last-of-type {
+      padding-top: 0;
+      @include media-q($desktop-small) {
+        padding-top: 25px;
+      }
+    }
+    @include media-q($phablet) {
+      text-align: left;
+    }
+  }
+  &__button {
+    border: none;
+    width: 225px;
+    height: 62px;
+    background: linear-gradient(45deg, #496bfe 40%, #5474fd 0%);
+    margin-top: -10px;
+  }
+  &__button:hover {
+    background: linear-gradient(45deg, #496bfe 100%, #5474fd 0%);
+  }
+  &__button-text {
+    @include font($base-font, 16px, 300, $main-text-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+  }
+}

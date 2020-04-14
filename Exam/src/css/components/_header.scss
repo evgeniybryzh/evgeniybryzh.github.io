@@ -1,0 +1,78 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 10px;
+  @include media-q($container-width) {
+    height: 100vh;
+  }
+
+  &__title {
+    @include font($secondary-font, 40px, 400, $main-text-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+    @include media-q($phone) {
+      @include font($secondary-font, 48px, 400, $main-text-color);
+      padding-top: 0px;
+      padding-left: 0px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 4px;
+      text-align: center;
+    }
+    @include media-q($container-width) {
+      padding-top: 24px;
+      padding-left: 6px;
+    }
+  }
+  &__text {
+    @include font($secondary-font, 22px, 100, $main-text-color);
+    letter-spacing: 4.5px;
+    word-spacing: 6px;
+    margin-bottom: 49px;
+    text-align: center;
+  }
+  &__form {
+    margin-bottom: 120px;
+  }
+  &__scroll-name {
+    @extend .form__input::placeholder;
+    margin-bottom: 5px;
+    padding-left: 4px;
+    letter-spacing: 2px;
+  }
+  &__scroll {
+    @include flex-main(column, center, center);
+  }
+
+  &__scroll:hover &__scroll-name {
+    color: white;
+    transform: scale(1.2);
+  }
+  &__scroll:hover &__scroll-icon {
+    color: white;
+    transform: scale(1.2);
+  }
+
+  &__container {
+    height: 100vh;
+    @include flex-main(column);
+  }
+  &__burger {
+    display: block;
+    position: fixed;
+    z-index: 4000;
+    right: 30px;
+    top: 40px;
+    @include media-q($tablet) {
+      display: none;
+    }
+  }
+}

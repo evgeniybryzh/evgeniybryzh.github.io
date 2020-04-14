@@ -1,0 +1,46 @@
+.bottom-line {
+  width: 100%;
+  height: 168px;
+
+  background-color: $footer-line-bg-color;
+  padding-bottom: 20px;
+  @include flex-main(column, flex-start);
+  padding-top: 30px;
+  padding-left: 0px;
+  @include media-q($tablet) {
+    width: 100%;
+    height: 268px;
+    background-color: $footer-line-bg-color;
+    padding-bottom: 20px;
+    @include flex-main(column, flex-start);
+    padding-top: 120px;
+    padding-left: 0px;
+  }
+  &__icon {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    fill: $main-text-color;
+    &:hover {
+      fill: $btn-bg-color;
+    }
+  }
+  &__title {
+    display: block;
+    @include font($secondary-font, 24px, 400, $main-text-color);
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    margin-bottom: 12px;
+  }
+  &__text {
+    display: block;
+    @include font($secondary-font, 16px, 300, $main-text-color);
+    word-spacing: 3px;
+    margin-bottom: 29px;
+  }
+  &__list {
+    width: 170px;
+    @include flex-main(row, space-between);
+    margin-right: 5px;
+  }
+}

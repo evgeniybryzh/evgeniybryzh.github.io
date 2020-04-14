@@ -1,0 +1,52 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/section-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include media-q($desktop-small) {
+    height: 100vh;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.9);
+    padding-top: 0;
+
+    @include media-q($desktop-small) {
+      padding-top: 118px;
+    }
+  }
+  &__container {
+    height: auto;
+    @include flex-main(column);
+    @include media-q($desktop-small) {
+      height: 100%;
+      @include flex-main(column, flex-start);
+    }
+  }
+  &__main-title {
+    @include font($base-font, 36px, 300, $main-text-color);
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    text-align: center;
+
+    @include media-q($phone) {
+      @include font($base-font, 36px, 300, $main-text-color);
+      margin-bottom: 20px;
+      padding: 40 0px;
+    }
+    @include media-q($desktop-small) {
+      @include font($base-font, 36px, 300, $main-text-color);
+      letter-spacing: 0.6px;
+      word-spacing: 1px;
+      margin-bottom: 90px;
+
+      text-align: center;
+    }
+  }
+}

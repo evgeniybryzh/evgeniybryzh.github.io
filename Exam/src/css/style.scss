@@ -1,0 +1,27 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Aleo:400,700|Josefin+Sans&display=swap");
+
+// Core
+@import "./core/vars";
+@import "./core/inheritance";
+@import "./core/mixins";
+@import "./core/common";
+
+// components-->common
+@import "./src/css/components/common/nav";
+@import "./src/css/components/common/form";
+@import "./src/css/components/common/button";
+@import "./src/css/components/common/text-box";
+@import "./src/css/components/common/images-box";
+@import "./src/css/components/common/icon-box";
+@import "./src/css/components/common/content-box";
+@import "./src/css/components/common/card";
+@import "./src/css/components/common/bottom-line";
+@import "./src/css/components/common/burger-menu";
+@import "./src/css/components/common/burger";
+
+// Components
+@import "./src/css/components/header";
+@import "./src/css/components/footer";
+@import "./src/css/components/why";
+@import "./src/css/components/example";

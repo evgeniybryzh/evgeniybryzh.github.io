@@ -1,0 +1,17 @@
+.button {
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  background-color: $btn-bg-color;
+
+  @include border(2px, solid, white);
+  @include font($base-font, 14px, 300, $main-text-color);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  padding-top: 5px;
+  padding-left: 22px;
+  @include flex-main;
+  &__ico {
+    margin-left: 14px;
+  }
+}

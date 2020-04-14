@@ -34,3 +34,5 @@
     * [Lesson 13.2](https://evgeniybryzh.github.io/Lesson-13-SVG/Task_2/build/index.html)
  * Lesson 18
     * [Lesson 18](https://evgeniybryzh.github.io/Lesson-18-Cahee/build/index.html)   
+ * Lesson 22 JS
+    * [Lesson 18](https://evgeniybryzh.github.io/Lesson-22-JS/build/index.html) 

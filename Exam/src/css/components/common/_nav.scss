@@ -1,0 +1,69 @@
+.nav {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background-color: $nav-bg-color;
+  z-index: 2000;
+  padding: 0 10px;
+  display: none;
+
+  @include media-q($tablet) {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background-color: $nav-bg-color;
+    z-index: 2000;
+    padding: 0 10px;
+    height: 80px;
+  }
+  @include media-q($container-width) {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: $nav-bg-color;
+    z-index: 2000;
+    padding: 0 0px;
+  }
+  &__container {
+    height: 100%;
+    @include flex-main(column, space-evenly, center);
+    padding: 0px 10px;
+
+    @include media-q($tablet) {
+      @include flex-main(row, space-between, center);
+      padding: 0px 0px;
+    }
+  }
+  &__name {
+    @include font($secondary-font, 24px, 400, $main-text-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__item-name {
+    @include font($base-font, 14px, 300, $main-text-color);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    &:hover {
+      border-bottom: 2px solid white;
+    }
+  }
+  &__list {
+    @include flex-main;
+    text-align: center;
+  }
+  &__item:not(:last-of-type) {
+    margin-right: 10px;
+    @include media-q($phone-wide) {
+      margin-right: 43px;
+    }
+  }
+}

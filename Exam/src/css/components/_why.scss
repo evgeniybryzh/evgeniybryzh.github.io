@@ -1,0 +1,19 @@
+.why {
+  background-image: url(../images/section-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.9);
+  }
+  &__container {
+    @include flex-main(column, space-between, center);
+    flex-wrap: wrap;
+    @include media-q($desktop-small) {
+      @include flex-main(row, space-between, center);
+    }
+  }
+}
