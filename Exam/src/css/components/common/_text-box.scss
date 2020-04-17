@@ -24,6 +24,7 @@
     }
   }
   &__text {
+    padding: 0 20px;
     display: block;
     @include font($secondary-font, 16px, 300, $secondary-text-color);
     line-height: 26px;
@@ -45,18 +46,24 @@
     }
     @include media-q($phablet) {
       text-align: left;
+      padding: 0 0;
     }
   }
   &__button {
     border: none;
-    width: 225px;
-    height: 62px;
+    width: 95%;
+    height: 80px;
     background: linear-gradient(45deg, #496bfe 40%, #5474fd 0%);
     margin-top: -10px;
+    @include media-q($tablet) {
+      width: 225px;
+      height: 62px;
+    }
+    &:hover {
+      background: linear-gradient(45deg, #496bfe 100%, #5474fd 0%);
+    }
   }
-  &__button:hover {
-    background: linear-gradient(45deg, #496bfe 100%, #5474fd 0%);
-  }
+
   &__button-text {
     @include font($base-font, 16px, 300, $main-text-color);
     text-transform: uppercase;

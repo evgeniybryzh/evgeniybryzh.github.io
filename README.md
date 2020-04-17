@@ -36,3 +36,5 @@
     * [Lesson 18](https://evgeniybryzh.github.io/Lesson-18-Cahee/build/index.html)   
  * Lesson 22-JS
     * [Lesson 22-JS](https://evgeniybryzh.github.io/Lesson-22-JS/build/index.html) 
+ * Lesson 23-JS
+    * [Lesson 23-JS](https://evgeniybryzh.github.io/Lesson-23-JS/build/index.html) 

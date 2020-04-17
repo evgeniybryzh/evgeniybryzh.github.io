@@ -1,16 +1,30 @@
 .form {
   @include flex-main(column, flex-start, center);
+  width: 100%;
   @include media-q($tablet) {
-    @include flex-main(row, flex-start, flex-start);
+    @include flex-main(row, center, flex-start);
+    &__input:invalid,
+    &__input:invalid + &__button {
+      border: 4px solid red;
+    }
+    &__input:valid,
+    &__input:valid + &__button {
+      border: 4px solid green;
+    }
+    &__input:not(:focus),
+    &__input:not(:focus) + &__button {
+      border: 4px solid transparent;
+    }
   }
   &__input {
-    width: 300px;
-    height: 60px;
+    width: 95%;
+    height: 80px;
     padding-left: 10px;
     border: 1px solid white;
     margin-bottom: 10px;
 
     @include media-q($tablet) {
+      height: 60px;
       width: 500px;
       padding-left: 125px;
       margin-bottom: 0px;
@@ -19,19 +33,6 @@
     &::placeholder {
       @include font($secondary-font, 14px, 300, $input-text-color);
       letter-spacing: 1.8px;
-    }
-
-    &:invalid,
-    &:invalid + .form__button {
-      border: 4px solid red;
-    }
-    &:valid,
-    &:valid + .form__button {
-      border: 4px solid green;
-    }
-    &:not(:focus),
-    &:not(:focus) + .form__button {
-      border: 4px solid transparent;
     }
   }
 }

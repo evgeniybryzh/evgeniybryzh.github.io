@@ -10,21 +10,25 @@
   &__list {
     width: auto;
 
-    @include flex-main(row, space-between);
+    height: 400px;
+    @include flex-main(column, space-between);
 
     @include media-q(640px) {
       width: 650px;
+      height: 400px;
 
-      @include flex-main(row, space-between);
+      @include flex-main(column, space-between);
     }
 
     @include media-q(793px) {
       width: 787px;
+      height: auto;
 
       @include flex-main(row, space-between);
     }
     @include media-q(993px) {
       width: 987px;
+      height: auto;
 
       @include flex-main(row, space-between);
     }
@@ -35,13 +39,6 @@
     @include media-q($desktop-small) {
       margin-bottom: 109px;
       padding-left: 5px;
-    }
-
-    &:not(:last-of-type) {
-      border-right: 1px solid grey;
-      @include media-q($tablet-small) {
-        border-right: none;
-      }
     }
   }
   &__icon-name {
