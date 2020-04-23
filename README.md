@@ -38,3 +38,5 @@
     * [Lesson 22-JS](https://evgeniybryzh.github.io/Lesson-22-JS/build/index.html) 
  * Lesson 23-JS
     * [Lesson 23-JS](https://evgeniybryzh.github.io/Lesson-23-JS/build/index.html) 
+ * Lesson 24-JS
+    * [Lesson 24-JS](https://evgeniybryzh.github.io/Lesson-24-JS/build/index.html) 
