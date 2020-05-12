@@ -46,3 +46,5 @@
     * [Lesson 26-JS](https://evgeniybryzh.github.io/Lesson-26-JS/build/index.html) 
  * Lesson 27-JS
     * [Lesson 27-JS](https://evgeniybryzh.github.io/Lesson-27-JS/build/index.html) 
+ * Lesson 29-JS
+    * [Lesson 29-JS](https://evgeniybryzh.github.io/Lesson-29-JS/build/index.html) 
