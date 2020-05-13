@@ -9,6 +9,10 @@
   align-items: center;
   padding: 20px;
   display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 20%;
+  left: 40%;
   &__title {
     font-size: 3rem;
     font-weight: 600;
