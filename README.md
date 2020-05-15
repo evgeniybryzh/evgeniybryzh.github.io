@@ -50,3 +50,5 @@
     * [Lesson 28-JS](https://evgeniybryzh.github.io/Lesson-28-JS/dist/index.html)
 * Lesson 29-JS
     * [Lesson 29-JS](https://evgeniybryzh.github.io/Lesson-29-JS/dist/index.html)
+* Lesson 30-JS
+    * [Lesson 30-JS](https://evgeniybryzh.github.io/Lesson-30-JS/dist/index.html)
