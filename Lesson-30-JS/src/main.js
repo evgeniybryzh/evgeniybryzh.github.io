@@ -105,7 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("mousedown", (event) => {
     const $borderedBox = document.getElementById("box");
     $borderedBox.style.resize = "both";
-    console.log($borderedBox);
   });
   document.addEventListener("mouseup", (event) => {
     const $borderedBox = document.getElementById("box");
