@@ -29,76 +29,36 @@ document.addEventListener("DOMContentLoaded", () => {
       $text.innerText = newTextInDiv;
     }
   });
+
   // Task2
+  function reused(a) {
+    let rowNumbers = document.getElementById(a);
+    let rowNumbersArr = rowNumbers.children;
+    let numbers = [];
+    for (let i = 1; i < rowNumbersArr.length; i++) {
+      numbers.push(rowNumbersArr[i].innerText);
+    }
+    numbers.sort(sortNumbers);
+    let f = 1;
+    for (let s = 0; s < numbers.length; s++) {
+      rowNumbersArr[f].innerText = numbers[s];
+      f++;
+    }
+  }
   document.addEventListener("click", function (event) {
     const $table = document.querySelector("table");
     let $tableRow = document.getElementsByTagName("th");
     let $tableRowArr = [...$tableRow];
     if (event.target == $tableRowArr[0]) {
-      let rowNumbers = document.getElementById("row1");
-      let rowNumbersArr = rowNumbers.children;
-      let numbers = [];
-      for (let i = 1; i < rowNumbersArr.length; i++) {
-        numbers.push(rowNumbersArr[i].innerText);
-      }
-      numbers.sort(sortNumbers);
-      let f = 1;
-      for (let s = 0; s < numbers.length; s++) {
-        rowNumbersArr[f].innerText = numbers[s];
-        f++;
-      }
+      reused("row1");
     } else if (event.target == $tableRowArr[1]) {
-      let rowNumbers = document.getElementById("row2");
-      let rowNumbersArr = rowNumbers.children;
-      let numbers = [];
-      for (let i = 1; i < rowNumbersArr.length; i++) {
-        numbers.push(rowNumbersArr[i].innerText);
-      }
-      numbers.sort(sortNumbers);
-      let f = 1;
-      for (let s = 0; s < numbers.length; s++) {
-        rowNumbersArr[f].innerText = numbers[s];
-        f++;
-      }
+      reused("row2");
     } else if (event.target == $tableRowArr[2]) {
-      let rowNumbers = document.getElementById("row3");
-      let rowNumbersArr = rowNumbers.children;
-      let numbers = [];
-      for (let i = 1; i < rowNumbersArr.length; i++) {
-        numbers.push(rowNumbersArr[i].innerText);
-      }
-      numbers.sort(sortNumbers);
-      let f = 1;
-      for (let s = 0; s < numbers.length; s++) {
-        rowNumbersArr[f].innerText = numbers[s];
-        f++;
-      }
+      reused("row3");
     } else if (event.target == $tableRowArr[3]) {
-      let rowNumbers = document.getElementById("row4");
-      let rowNumbersArr = rowNumbers.children;
-      let numbers = [];
-      for (let i = 1; i < rowNumbersArr.length; i++) {
-        numbers.push(rowNumbersArr[i].innerText);
-      }
-      numbers.sort(sortNumbers);
-      let f = 1;
-      for (let s = 0; s < numbers.length; s++) {
-        rowNumbersArr[f].innerText = numbers[s];
-        f++;
-      }
+      reused("row4");
     } else if (event.target == $tableRowArr[4]) {
-      let rowNumbers = document.getElementById("row5");
-      let rowNumbersArr = rowNumbers.children;
-      let numbers = [];
-      for (let i = 1; i < rowNumbersArr.length; i++) {
-        numbers.push(rowNumbersArr[i].innerText);
-      }
-      numbers.sort(sortNumbers);
-      let f = 1;
-      for (let s = 0; s < numbers.length; s++) {
-        rowNumbersArr[f].innerText = numbers[s];
-        f++;
-      }
+      reused("row5");
     }
   });
   // Task3
