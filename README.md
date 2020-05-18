@@ -53,5 +53,6 @@
 * Lesson 30-JS
     * [Lesson 30-JS](https://evgeniybryzh.github.io/Lesson-30-JS/dist/index.html)
 * Lesson 31-JS
-    * [Lesson 31-JS](https://evgeniybryzh.github.io/Lesson-31-JS/Task_1/build/index.html)
+    * [Lesson 31-JS-Task1](https://evgeniybryzh.github.io/Lesson-31-JS/Task_1/build/index.html)
+    * [Lesson 31-JS-Task2](https://evgeniybryzh.github.io/Lesson-31-JS/Task_2/build/index.html)
 

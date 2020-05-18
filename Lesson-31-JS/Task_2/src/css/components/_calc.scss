@@ -1,0 +1,57 @@
+.title {
+  @include font(Sans-serif, 40px, 600, Black);
+  margin-top: 50px;
+}
+.calc {
+  width: 500px;
+  height: 750px;
+  margin: auto auto;
+  border: 4px solid black;
+  border-radius: 20px;
+  @include flex-main(column, flex-start, center);
+  padding-top: 5px;
+  background-color: $grey;
+  &__name {
+    height: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    @include font(sans-serif, 40px, 600, $dark);
+  }
+  &__display {
+    width: 95%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    @include flex-main();
+    @include font(sans-serif, 40px, 600, $dark);
+    overflow: hidden;
+    cursor: default;
+  }
+  &__body {
+    width: 500px;
+    height: 100%;
+    padding: 30px;
+    @include flex-main(row, center, center);
+    flex-wrap: wrap;
+  }
+  &__body-item {
+    width: 100px;
+    height: 95px;
+    @include font(sans-serif, 40px, 600, $dark);
+    @include flex-main();
+    border: 1px solid black;
+    margin: 2px;
+    background-color: $white;
+    transition: 0.1s all ease;
+    cursor: pointer;
+    &:hover {
+      background-color: wheat;
+    }
+    &:nth-child(17) {
+      width: 100%;
+      margin: 15px;
+    }
+  }
+}
