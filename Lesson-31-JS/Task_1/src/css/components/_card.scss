@@ -54,6 +54,7 @@
   }
   &__image {
     margin-bottom: 20px;
+    box-shadow: 0px 21px 9px -8px rgba(0, 0, 0, 0.44);
   }
   &__svg-wrapper {
     @include flex-main;
@@ -97,15 +98,7 @@
   &__price-wrapper {
     @include flex-main(column, flex-start, flex-start);
   }
-  &__button {
-    background-color: $button-color;
-    width: 165px;
-    height: 58px;
-    @include font($main-font, 14px, 400, $main-text-color);
-    border-radius: 3px;
-    @include flex-main;
-    transition: 0.3s ease all;
-  }
+
   &__button:hover {
     filter: grayscale(1.2);
     color: $dark;

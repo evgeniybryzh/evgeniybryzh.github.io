@@ -1,0 +1,9 @@
+.button {
+  background-color: $button-color;
+  width: 165px;
+  height: 58px;
+  @include font($main-font, 14px, 400, $main-text-color);
+  border-radius: 3px;
+  @include flex-main;
+  transition: 0.3s ease all;
+}
