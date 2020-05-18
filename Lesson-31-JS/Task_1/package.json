@@ -6,10 +6,16 @@
   "devDependencies": {
     "cssnano": "^4.1.10",
     "parcel-plugin-clean-dist": "0.0.6",
+    "parcel-plugin-svg-sprite": "^1.4.1",
     "sass": "^1.26.5"
   },
   "scripts": {
     "dev": "parcel ./src/index.html --open",
     "build": "parcel build ./src/index.html"
+  },
+  "svgSpriteOptions": {
+    "include": [
+      "src/**/*"
+    ]
   }
 }
