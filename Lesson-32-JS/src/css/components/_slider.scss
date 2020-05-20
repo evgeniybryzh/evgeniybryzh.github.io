@@ -1,0 +1,41 @@
+.slider {
+  padding-top: 60px;
+  @include flex-main;
+  &__title-box {
+    position: relative;
+  }
+  @include flex-main(column, center, center);
+  &__subtitle {
+    @include font($main-font, 18px, 500, $footer-black);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  &__title {
+    @include font($main-font, 46px, 700, $footer-black);
+    width: 1040px;
+    text-align: center;
+    line-height: 90px;
+    text-transform: uppercase;
+    margin-bottom: 93px;
+    width: 500px;
+    @include media-q(1152px) {
+      @include font($main-font, 86px, 700, $footer-black);
+      width: 1040px;
+      text-align: center;
+      line-height: 90px;
+      text-transform: uppercase;
+      margin-bottom: 93px;
+    }
+  }
+  &__triangle {
+    position: absolute;
+    left: -63px;
+    top: 170px;
+  }
+  &__plus {
+    position: absolute;
+    right: 140px;
+    top: -31px;
+  }
+}

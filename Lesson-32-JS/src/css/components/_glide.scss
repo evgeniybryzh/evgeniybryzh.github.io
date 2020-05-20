@@ -1,0 +1,34 @@
+.glide {
+  position: relative;
+
+  &__arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 150px;
+  }
+  &__arrow {
+    cursor: pointer;
+    margin: 0 20px;
+  }
+  &__image-box {
+    width: 440px;
+    height: 400px;
+    background-image: url(../images/Layer6.png);
+    @include flex-main(column, flex-end, flex-start);
+  }
+  &__image-text {
+    margin-left: 30px;
+    display: block;
+    @include font($main-font, 28px, 600, $white);
+    line-height: 24px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    &:last-of-type {
+      @include font($main-font, 12px, 400, $white);
+      margin-top: 8px;
+      margin-bottom: 40px;
+    }
+  }
+}
