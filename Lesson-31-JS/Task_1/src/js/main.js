@@ -1,115 +1,90 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-  function ChangeCardContent() {
-    const $list = document.getElementById("list").children;
-    const $content = document.getElementById("content").children;
-    const $items = document.querySelectorAll(".card__item");
-    const $item1 = $items[0].children;
+  function changeCardContent() {
+    const $listChildren = document.getElementById("list").children;
+    const $contentChildren = document.getElementById("content").children;
+    const $items = document.querySelectorAll(".tabs__item");
+    const $item1 = $items[0].children; // это вообще уже сложно как то еще не стаильно? вдруг где не ьудет компонента будет undefined и станет код
     const $item2 = $items[1].children;
     const $item3 = $items[2].children;
-
-    function changeContent(a, b, c, x, y, z, d, e, f, g, h, i) {
-      $list[a].classList.add("card__item--checked");
-      b[0].classList.add("card__svg--checked");
-      $list[c].classList.remove("card__item--checked");
-      x[1].classList.add("card__item-name--checked");
-      y[1].classList.remove("card__item-name--checked");
-      z[1].classList.remove("card__item-name--checked");
-      d[0].classList.remove("card__svg--checked");
-      $list[e].classList.remove("card__item--checked");
-      f[0].classList.remove("card__svg--checked");
-      $content[g].style.display = "flex";
-      $content[h].style.display = "none";
-      $content[i].style.display = "none";
-    }
     document.addEventListener("click", (event) => {
       if (
-        event.target == $list[0] ||
+        event.target == $listChildren[0] ||
         event.target == $item1[0] ||
         event.target == $item1[1]
       ) {
-        changeContent(
-          0,
-          $item1,
-          1,
-          $item1,
-          $item2,
-          $item3,
-          $item2,
-          2,
-          $item3,
-          0,
-          1,
-          2
-        );
+        $listChildren[0].classList.add("item-active");
+        $item1[0].classList.add("svg-active");
+        $listChildren[1].classList.remove("item-active");
+        $item1[1].classList.add("name-active");
+        $item2[1].classList.remove("name-active");
+        $item3[1].classList.remove("name-active");
+        $item2[0].classList.remove("svg-active");
+        $listChildren[2].classList.remove("item-active");
+        $item3[0].classList.remove("svg-active");
+        $contentChildren[0].style.display = "flex";
+        $contentChildren[1].style.display = "none";
+        $contentChildren[2].style.display = "none";
       } else if (
-        event.target == $list[1] ||
+        event.target == $listChildren[1] ||
         event.target == $item2[0] ||
         event.target == $item2[1]
       ) {
-        changeContent(
-          1,
-          $item2,
-          0,
-          $item2,
-          $item1,
-          $item3,
-          $item1,
-          2,
-          $item3,
-          1,
-          0,
-          2
-        );
+        $listChildren[1].classList.add("item-active");
+        $item2[0].classList.add("svg-active");
+        $listChildren[0].classList.remove("item-active");
+        $item2[1].classList.add("name-active");
+        $item1[1].classList.remove("name-active");
+        $item3[1].classList.remove("name-active");
+        $item1[0].classList.remove("svg-active");
+        $listChildren[2].classList.remove("item-active");
+        $item3[0].classList.remove("svg-active");
+        $contentChildren[1].style.display = "flex";
+        $contentChildren[0].style.display = "none";
+        $contentChildren[2].style.display = "none";
       } else if (
-        event.target == $list[2] ||
+        event.target == $listChildren[2] ||
         event.target == $item3[0] ||
         event.target == $item3[1]
       ) {
-        $content[2].style.display = "flex";
-        changeContent(
-          2,
-          $item3,
-          0,
-          $item3,
-          $item2,
-          $item1,
-          $item1,
-          1,
-          $item2,
-          2,
-          0,
-          1
-        );
+        $contentChildren[2].style.display = "flex";
+        $listChildren[2].classList.add("item-active");
+        $item3[0].classList.add("svg-active");
+        $listChildren[0].classList.remove("item-active");
+        $item3[1].classList.add("name-active");
+        $item2[1].classList.remove("name-active");
+        $item1[1].classList.remove("name-active");
+        $item1[0].classList.remove("svg-active");
+        $listChildren[1].classList.remove("item-active");
+        $item2[0].classList.remove("svg-active");
+        $contentChildren[2].style.display = "flex";
+        $contentChildren[0].style.display = "none";
+        $contentChildren[1].style.display = "none";
       }
     });
   }
-  ChangeCardContent();
+  changeCardContent();
 
   function changeStarValue() {
-    const $stars = document.querySelectorAll(".card__svg-use");
+    const $star1 = document.getElementById("star1");
+    const $star2 = document.getElementById("star2");
+    const $star3 = document.getElementById("star3");
+    const $star4 = document.getElementById("star4");
+    const $star5 = document.getElementById("star5");
+    const $allStars = [$star1, $star2, $star3, $star4, $star5];
+    console.log($allStars);
     const $starsBox = document.getElementById("stars");
-    function changeStarColor(a, b) {
-      for (let i = 0; i <= 4; i++) {
-        $stars[i].style.fill = "#4b536b";
-      }
-      for (let i = 0; i <= a; i++) {
-        $stars[i].style.fill = "#ffdd3f";
-      }
+    function changeStarColor(a) {
+      $allStars.forEach(
+        (el, idx) => (el.style.fill = idx <= a ? "#ffdd3f" : "#4b536b")
+      );
     }
-    document.addEventListener("click", (event) => {
-      if (event.target == $stars[0]) {
-        changeStarColor(0);
-      } else if (event.target == $stars[1]) {
-        changeStarColor(1);
-      } else if (event.target == $stars[2]) {
-        changeStarColor(2);
-      } else if (event.target == $stars[3]) {
-        changeStarColor(3);
-      } else if (event.target == $stars[4]) {
-        changeStarColor(4);
-      }
+    $allStars.forEach((el) => {
+      el.addEventListener("click", () => {
+        const idx = $allStars.indexOf(el);
+        changeStarColor(idx);
+      });
     });
   }
   changeStarValue();

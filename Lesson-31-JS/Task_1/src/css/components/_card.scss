@@ -1,43 +1,4 @@
 .card {
-  &__svg {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 10px;
-    fill: $secondary-text-color;
-  }
-  &__svg--checked {
-    fill: $main-text-color;
-  }
-  &__star-icon {
-    width: 25px;
-    height: 25px;
-    fill: $star-passive-color;
-    transition: 0.3s ease all;
-    &:hover {
-      fill: $star-icon-color;
-    }
-  }
-  &__list {
-    width: 100%;
-    height: 117px;
-    @include flex-main(row, space-evenly, center);
-    background-color: $card-list-color;
-  }
-  &__item {
-    height: 100%;
-    @include flex-main(column, center, center);
-    border-bottom: 2px solid transparent;
-    cursor: pointer;
-  }
-  &__item--checked {
-    border-bottom: 2px solid $main-text-color;
-  }
-  &__item-name {
-    @include font($main-font, 16px, 400, $secondary-text-color);
-  }
-  &__item-name--checked {
-    color: $main-text-color;
-  }
   &__content {
     width: 100%;
     height: 425px;
@@ -49,22 +10,20 @@
     @include flex-main(row, space-between, flex-start);
     padding: 59px 47px 59px 47px;
   }
-  &__image-block {
+  &__image-box {
     flex-basis: 30%;
   }
   &__image {
     margin-bottom: 20px;
     box-shadow: 0px 21px 9px -8px rgba(0, 0, 0, 0.44);
   }
-  &__svg-wrapper {
-    @include flex-main;
-  }
-  &__text-block {
+
+  &__info {
     height: 306px;
     flex-basis: 60%;
     @include flex-main(column, space-between, flex-start);
   }
-  &__title-block {
+  &__title-box {
     height: 75px;
     width: 100%;
     @include flex-main(row, space-between, center);
@@ -91,7 +50,7 @@
     display: block;
     margin-bottom: 40px;
   }
-  &__price-block {
+  &__price-box {
     @include flex-main(row, space-between, center);
     width: 100%;
   }
@@ -129,4 +88,13 @@
     padding: 59px 47px 59px 47px;
     display: none;
   }
+}
+.svg-active {
+  fill: $main-text-color;
+}
+.name-active {
+  color: $main-text-color;
+}
+.item-active {
+  border-bottom: 2px solid $main-text-color;
 }

@@ -1,0 +1,14 @@
+.stars {
+  @include flex-main;
+
+  &__star-icon {
+    width: 25px;
+    height: 25px;
+    fill: $star-passive-color;
+    transition: 0.3s ease all;
+
+    &:hover {
+      fill: $star-icon-color;
+    }
+  }
+}

@@ -16,22 +16,22 @@
       <div class="main__wrapper">
         <div class="container">
           <div class="card">
-            <ul id="list" class="card__list">
-              <li class="card__item card__item--checked">
-                <svg class="card__svg card__svg--checked">
+            <ul id="list" class="tabs">
+              <li class="tabs__item item-active">
+                <svg class="tabs__svg svg-active">
                   <use href="#tooltip" />
                 </svg>
-                <h2 class="card__item-name card__item-name--checked">
+                <h2 class="tabs__item-name name-active">
                   INFORMATION
                 </h2>
               </li>
-              <li class="card__item">
-                <svg class="card__svg"><use href="#card" /></svg>
-                <h2 class="card__item-name">RATINGS INFO</h2>
+              <li class="tabs__item">
+                <svg class="tabs__svg"><use href="#card" /></svg>
+                <h2 class="tabs__item-name">RATINGS INFO</h2>
               </li>
-              <li class="card__item">
-                <svg class="card__svg"><use href="#basket" /></svg>
-                <h2 class="card__item-name">WHERE TO BUY</h2>
+              <li class="tabs__item">
+                <svg class="tabs__svg"><use href="#basket" /></svg>
+                <h2 class="tabs__item-name">WHERE TO BUY</h2>
               </li>
             </ul>
             <div id="content" class="card__content">
@@ -39,28 +39,38 @@
                 id="game-info"
                 class="card__game-info animate__animated animate__zoomIn"
               >
-                <div class="card__image-block">
+                <div class="card__image-box">
                   <img src="images/fc.jpg" alt="Far Cry" class="card__image" />
-                  <div id="stars" class="card__svg-wrapper">
-                    <svg class="card__star-icon">
-                      <use class="card__svg-use" href="#star" />
-                    </svg>
-                    <svg class="card__star-icon">
-                      <use class="card__svg-use" href="#star" />
-                    </svg>
-                    <svg class="card__star-icon">
-                      <use class="card__svg-use" href="#star" />
-                    </svg>
-                    <svg class="card__star-icon">
-                      <use class="card__svg-use" href="#star" />
-                    </svg>
-                    <svg class="card__star-icon">
-                      <use class="card__svg-use" href="#star" />
-                    </svg>
-                  </div>
+                  <ul id="stars" class="stars">
+                    <li>
+                      <svg class="stars__star-icon">
+                        <use id="star1" class="stars__svg-use" href="#star" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="stars__star-icon">
+                        <use id="star2" class="stars__svg-use" href="#star" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="stars__star-icon">
+                        <use id="star3" class="stars__svg-use" href="#star" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="stars__star-icon">
+                        <use id="star4" class="stars__svg-use" href="#star" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="stars__star-icon">
+                        <use id="star5" class="stars__svg-use" href="#star" />
+                      </svg>
+                    </li>
+                  </ul>
                 </div>
-                <div class="card__text-block">
-                  <div class="card__title-block">
+                <div class="card__info">
+                  <div class="card__title-box">
                     <div class="card__title-wrapper">
                       <h2 class="card__title">FarCry 4</h2>
                       <h3 class="card__subtitle">
@@ -79,7 +89,7 @@
                     struggling under the regime of a despotic self-appointed
                     king.</span
                   >
-                  <div class="card__price-block">
+                  <div class="card__price-box">
                     <div class="card__price-wrapper">
                       <span class="card__discount">20% OFF!</span>
                       <span class="card__price">$59.96</span>

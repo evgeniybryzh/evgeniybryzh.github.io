@@ -1,0 +1,13 @@
+// Fonts
+// @import url("");
+// Core
+@import "./core/vars";
+@import "./core/inheritance";
+@import "./core/mixins";
+@import "./core/common";
+
+// components-->common
+
+// Components
+@import "./src/css/components/header";
+@import "./src/css/components/footer";
