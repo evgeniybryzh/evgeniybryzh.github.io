@@ -8,6 +8,7 @@ $footer-color: #262626;
 $footer-white: #ffffff;
 $footer-black: black;
 $footer-red: red;
+$dark-white: rgba(white, $alpha: 0.7);
 // Bacground colors
 
 // Button colors
@@ -15,6 +16,8 @@ $footer-red: red;
 // Text colors
 
 // Border colors
+
+$main-font: "Chelsea Market", cursive;
 
 $logo-fs: calcRem(50px);
 

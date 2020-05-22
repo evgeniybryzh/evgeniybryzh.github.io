@@ -1,0 +1,17 @@
+.button {
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+  @include font(sans-serif, 20px, 700, $dark);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  @include flex-main;
+  border: 3px solid transparent;
+  z-index: 100;
+  transition: 0.3s ease all;
+  &:hover {
+    background-color: yellow;
+    border: 3px solid $dark;
+    @include font($main-font, 20px, 700, $dark);
+  }
+}

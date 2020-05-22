@@ -1,4 +1,5 @@
 // Fonts
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
 // @import url("");
 // Core
 @import "./core/vars";
@@ -7,7 +8,8 @@
 @import "./core/common";
 
 // components-->common
-
+@import "./src/css/components/common/button";
 // Components
-@import "./src/css/components/header";
-@import "./src/css/components/footer";
+@import "./src/css/components/film";
+@import "./src/css/components/search";
+@import "./src/css/components/details";

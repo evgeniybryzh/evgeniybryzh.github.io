@@ -1,0 +1,25 @@
+.film {
+  @include flex-main(row, flex-start, flex-start);
+  flex-wrap: wrap;
+  padding: 30px;
+  z-index: 100;
+  &__poster {
+    width: 400px;
+    height: 400px;
+  }
+  &__title {
+    @include font($main-font, 50px, 800, whitesmoke);
+    text-align: center;
+    z-index: 100;
+  }
+  &__item-box {
+    border: 2px solid yellow;
+    min-height: 700px;
+    flex-basis: 23.5%;
+    @include flex-main(column, space-between, center);
+    margin: 10px;
+    padding: 5px;
+    z-index: 100;
+    border-radius: 20px;
+  }
+}

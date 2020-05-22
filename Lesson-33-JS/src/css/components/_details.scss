@@ -1,0 +1,41 @@
+.details {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid white;
+  background-color: rgba($color: $dark, $alpha: 0.6);
+  display: none;
+  z-index: 100;
+
+  &__title {
+    margin-bottom: 40px;
+    @include font($main-font, 50px, 800, white);
+    text-align: center;
+    z-index: 100;
+  }
+  &__description {
+    margin-bottom: 20px;
+    @include font($main-font, 30px, 600, white);
+    text-align: center;
+    z-index: 100;
+  }
+  &__release {
+    margin-bottom: 10px;
+    @include font($main-font, 20px, 400, white);
+    text-align: center;
+    z-index: 100;
+  }
+
+  &__rating {
+    margin-bottom: 10px;
+    @include font($main-font, 20px, 400, white);
+    text-align: center;
+    z-index: 100;
+  }
+}
+.active {
+  @include flex-main(column, flex-start, center);
+  z-index: 100;
+}
+.disabled {
+  display: none;
+}

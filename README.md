@@ -57,3 +57,5 @@
     * [Lesson 31-JS-Task2](https://evgeniybryzh.github.io/Lesson-31-JS/Task_2/build/index.html)
 * Lesson 32-JS
     * [Lesson 32-JS](https://evgeniybryzh.github.io/Lesson-32-JS/build/index.html)
+* Lesson 33-JS
+    * [Lesson 33-JS](https://evgeniybryzh.github.io/Lesson-33-JS/build/index.html)
