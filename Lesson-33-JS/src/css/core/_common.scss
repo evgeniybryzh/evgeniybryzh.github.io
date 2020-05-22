@@ -18,12 +18,25 @@ a {
 .film-search {
   width: 100%;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-bottom: 3px solid $dark-white;
+  height: auto;
+  background-color: rgba($color: #000000, $alpha: 0.5);
 }
 body {
-  background-image: url(../images/bg.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../images/bg3.jpg);
+  background-repeat: repeat;
   background-size: 100%;
   background-attachment: fixed;
+
+  @include media-q($tablet) {
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  @include media-q($tablet-wide) {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
 }

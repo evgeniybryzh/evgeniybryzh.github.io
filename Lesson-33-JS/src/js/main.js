@@ -38,6 +38,7 @@ $input.addEventListener("change", (event) => {
           filmElement.id = "film";
           $filmSearch.appendChild(filmElement);
           const $film = document.getElementById("film");
+
           for (let i = 0; i <= 10; i++) {
             let searchResoult = [...data.results];
             const $elementsWrapper = document.createElement("div");
@@ -47,7 +48,11 @@ $input.addEventListener("change", (event) => {
               $elementsWrapper.innerHTML += `<img class="film__poster" title="No poster for now" src="images/ph.png" alt="img"</img>`;
             $elementsWrapper.innerHTML += `<h2 class="film__title">${searchResoult[i].original_title}</h2>`;
             $elementsWrapper.innerHTML += `<a href="#details" class="button">WATCH DETAILS</a>`;
-            $elementsWrapper.classList.add("film__item-box");
+            $elementsWrapper.classList.add(
+              "film__item-box",
+              "animate__animated",
+              "animate__zoomInDown"
+            );
             $film.appendChild($elementsWrapper);
           }
           //Вешаю событие на созданную кнопку (показ детальной инфо. и скролл к ней)

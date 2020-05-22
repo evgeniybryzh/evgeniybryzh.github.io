@@ -1,25 +1,63 @@
 .film {
-  @include flex-main(row, flex-start, flex-start);
+  @include flex-main(row, center, flex-start);
   flex-wrap: wrap;
-  padding: 30px;
+
   z-index: 100;
+  @include media-q($desktop-large) {
+    @include flex-main(row, flex-start, flex-start);
+    flex-wrap: wrap;
+
+    z-index: 100;
+  }
   &__poster {
-    width: 400px;
+    width: 300px;
     height: 400px;
+    @include media-q($phone) {
+      width: 80%;
+      height: 40%;
+    }
+    @include media-q($tablet-larger) {
+      width: 350px;
+      height: 400px;
+    }
   }
   &__title {
-    @include font($main-font, 50px, 800, whitesmoke);
+    @include font($main-font, 50px, 800, $white);
     text-align: center;
     z-index: 100;
+    @include media-q($tablet-wide) {
+      @include font($main-font, 50px, 800, whitesmoke);
+    }
   }
   &__item-box {
     border: 2px solid yellow;
     min-height: 700px;
-    flex-basis: 23.5%;
+    flex-basis: 90%;
     @include flex-main(column, space-between, center);
     margin: 10px;
     padding: 5px;
     z-index: 100;
     border-radius: 20px;
+    transition: 0.5s all ease-in;
+    @include media-q($tablet-larger) {
+      border: 2px solid yellow;
+      min-height: 700px;
+      flex-basis: 45%;
+      @include flex-main(column, space-between, center);
+      margin: 10px;
+      padding: 5px;
+      z-index: 100;
+      border-radius: 20px;
+    }
+    @include media-q($tablet-wide) {
+      border: 2px solid yellow;
+      min-height: 700px;
+      flex-basis: 23.2%;
+      @include flex-main(column, space-between, center);
+      margin: 10px;
+      padding: 5px;
+      z-index: 100;
+      border-radius: 20px;
+    }
   }
 }

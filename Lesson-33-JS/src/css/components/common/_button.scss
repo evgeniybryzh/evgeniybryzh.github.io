@@ -1,6 +1,6 @@
 .button {
-  height: 50px;
-  width: 200px;
+  height: 100px;
+  width: 300px;
   cursor: pointer;
   @include font(sans-serif, 20px, 700, $dark);
   background-color: whitesmoke;
@@ -9,6 +9,10 @@
   border: 3px solid transparent;
   z-index: 100;
   transition: 0.3s ease all;
+  @include media-q($phone-wide) {
+    height: 50px;
+    width: 200px;
+  }
   &:hover {
     background-color: yellow;
     border: 3px solid $dark;
