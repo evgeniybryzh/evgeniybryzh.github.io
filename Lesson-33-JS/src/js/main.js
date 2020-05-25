@@ -2,7 +2,7 @@
 //Готовлю ссылку, которая будет мнятся при вводе названия фильма
 const $filmSearch = document.getElementById("film-search");
 let $input = document.getElementById("inp");
-$input.addEventListener("change", (event) => {
+$input.addEventListener("input", (event) => {
   let filmName = event.target.value;
   let link;
   let filmNameCount = filmName;
@@ -26,18 +26,22 @@ $input.addEventListener("change", (event) => {
   }
   //Реализация поиска фильмов по сгенерированной ссылке через фетч запрос
   function getResponse() {
+    let $film = document.getElementById("film");
     if (event.target.value != "") {
+      if ($filmSearch.children.length > 2) {
+        while ($film.firstChild) {
+          $film.removeChild($film.firstChild);
+        }
+      }
       fetch(link)
         .then((response) => {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
           const filmElement = document.createElement("div");
           filmElement.classList.add("film");
           filmElement.id = "film";
           $filmSearch.appendChild(filmElement);
-          const $film = document.getElementById("film");
 
           for (let i = 0; i <= 10; i++) {
             let searchResoult = [...data.results];
@@ -81,9 +85,6 @@ $input.addEventListener("change", (event) => {
         })
         // Ловлю ошибки и возвращаю состояние элементов
         .catch((error) => {
-          if (document.querySelectorAll(".film__item-box").length < 1) {
-            alert("No such films");
-          }
           console.log(error);
         });
     } else

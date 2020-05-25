@@ -25,6 +25,7 @@ body {
   background-repeat: repeat;
   background-size: 100%;
   background-attachment: fixed;
+  overflow-y: scroll;
 
   @include media-q($tablet) {
     background-image: url(../images/bg2.jpg);
