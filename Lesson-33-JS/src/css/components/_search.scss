@@ -16,7 +16,7 @@
     z-index: 1100;
     border-bottom: 2px solid $dark-white;
     background-color: rgba($color: #000000, $alpha: 0.5);
-    @include flex-main(column, center, center);
+    @include flex-main(row, center, center);
   }
   &__title {
     @include font($main-font, 80px, 800, yellow);
@@ -51,5 +51,16 @@
         padding-left: 0px;
       }
     }
+  }
+  &__input-wrapper {
+    flex-basis: 75%;
+  }
+  &__icon-box {
+    width: 200px;
+    height: 100%;
+  }
+  &__basket-icon {
+    width: 100%;
+    height: 100%;
   }
 }

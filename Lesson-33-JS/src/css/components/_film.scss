@@ -24,7 +24,9 @@
   &__title {
     @include font($main-font, 50px, 800, $white);
     text-align: center;
+    min-height: 170px;
     z-index: 100;
+    @include flex-main;
     @include media-q($tablet-wide) {
       @include font($main-font, 50px, 800, whitesmoke);
     }

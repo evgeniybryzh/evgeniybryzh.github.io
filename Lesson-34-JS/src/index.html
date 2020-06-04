@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ss</title>
+  </head>
+  <body>
+    <div class="map" id="map"></div>
+    <script src="js/main.js"></script>
+    <script>
+      function initMap() {
+        let kyiv = { lat: 50.449876, lng: 30.523595 };
+        let kremencug = { lat: 49.103622, lng: 33.419574 };
+        let options = {
+          center: kyiv,
+          zoom: 10,
+        };
+        let map = new google.maps.Map(document.getElementById("map"), options);
+        let kyivMarker = new google.maps.Marker({ position: kyiv, map: map });
+        let kremenchugMarker = new google.maps.Marker({
+          position: kremencug,
+          map: map,
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_FdMcEuZnzIK-WmsEAWDUSkK3brP4Chw&callback=initMap"
+    ></script>
+  </body>
+</html>
